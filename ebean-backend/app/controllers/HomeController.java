@@ -20,12 +20,14 @@ public class HomeController extends Controller {
         return ok(Json.toJson("Welcome to backend!"));
     }
     public Result info(){
-        Long id = 1L;
-        User user = User.find.byId(id);
+
+        List<User> users = User.find.all();
         List<String> infos = new ArrayList<>();
-        infos.add("Username: " + user.username);
-        infos.add("Password: " + user.password);
-        infos.add("Firstname: " + user.firstname);
+        for(User user: users){
+            infos.add("Username: " + user.username);
+            infos.add("Password: " + user.password);
+            infos.add("Firstname: " + user.firstname);
+        }
         Seq<String> infoSeq = JavaConverters.asScalaBufferConverter(infos).asScala().toSeq();
         Logger.info("infos" + infoSeq);
         return ok(views.html.info.render(infoSeq));

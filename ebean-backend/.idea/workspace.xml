@@ -5,143 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2447b557-cb6c-43f5-a408-c9c892372257" name="Changes" comment="Updated gitignore file and uploaded new project target files">
-      <change afterPath="$PROJECT_DIR$/_gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/info.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$49356cc79c3eba5ac761$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$49356cc79c3eba5ac761$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$49356cc79c3eba5ac761.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$49356cc79c3eba5ac761.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c496bf87be1d6aface94$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c496bf87be1d6aface94.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c496bf87be1d6aface94.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$dafde3dbd9bc6e8e7728$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$dafde3dbd9bc6e8e7728$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$dafde3dbd9bc6e8e7728.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$dafde3dbd9bc6e8e7728.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-docs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-sources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$2495b76a1ef33943964d$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$2495b76a1ef33943964d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$2495b76a1ef33943964d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$2495b76a1ef33943964d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$60a1d225aac2c7b369b4$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$60a1d225aac2c7b369b4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$60a1d225aac2c7b369b4.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$60a1d225aac2c7b369b4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$7180c462cf6ddf283b4d$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$7180c462cf6ddf283b4d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$7180c462cf6ddf283b4d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$7180c462cf6ddf283b4d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$8d29c084b0798ea2ea70$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$8d29c084b0798ea2ea70$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$8d29c084b0798ea2ea70.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$8d29c084b0798ea2ea70.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$a0ea741d09435ff6f665$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$a0ea741d09435ff6f665$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$a0ea741d09435ff6f665.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$a0ea741d09435ff6f665.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821$$anonfun$client$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821$$anonfun$client$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821$$anonfun$client$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821$$anonfun$client$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c116b8bbdcdf5d44d821.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c43971e45ada68559b98$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c43971e45ada68559b98$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c43971e45ada68559b98.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$c43971e45ada68559b98.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$d7a1ef78b5e7f5ed71d0$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$d7a1ef78b5e7f5ed71d0$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$d7a1ef78b5e7f5ed71d0.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$d7a1ef78b5e7f5ed71d0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$ed12d1242f641cdc0744$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$ed12d1242f641cdc0744$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$ed12d1242f641cdc0744.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$ed12d1242f641cdc0744.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/default/frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-docs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-sources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/index.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/index.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/login.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/login.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$9cf21ee75a5af302af97$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$9cf21ee75a5af302af97.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$9cf21ee75a5af302af97.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c3e461b5835c2094aa40$$anonfun$$sbtdef$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c3e461b5835c2094aa40$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c3e461b5835c2094aa40.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$c3e461b5835c2094aa40.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$ca199c4e08447031c55d$$anonfun$$sbtdef$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$ca199c4e08447031c55d$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$ca199c4e08447031c55d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$ca199c4e08447031c55d.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/exportedProducts/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,27 +70,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "42c7731b22fe5dee55e341dfe7ff04e6",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;42c7731b22fe5dee55e341dfe7ff04e6&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="backend" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="ebean-backend" />
@@ -249,7 +133,8 @@
       <workItem from="1676862536695" duration="2144000" />
       <workItem from="1676864727517" duration="999000" />
       <workItem from="1676892610217" duration="5492000" />
-      <workItem from="1676943549704" duration="1838000" />
+      <workItem from="1676943549704" duration="2435000" />
+      <workItem from="1676991434919" duration="4777000" />
     </task>
     <servers />
   </component>
