@@ -76,7 +76,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <center><strong>Security Questions</strong></center><br>
                         <div class="row">
                             <div class="form-group">
-                                <select style="display:block" class="selection-handle" name=secQuestion1" id="secQuestion2" class="validate">
+                                <select name="secQuestion1" style="display:block" class="selection-handle"  id="secQuestion2" class="validate">
                                     <option disabled>Select Question</option>
                                     <option value="petname">What was your first petname</option>
                                     <option value="hometown">What is your hometown</option>
@@ -91,7 +91,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         </div>
                         <div class="row">
                             <div class="form-select-button">
-                                    <select style="display:block" class="selection-handle" name=secQuestion2" id="secQuestion2" class="validate">
+                                    <select name="secQuestion2" style="display:block" class="selection-handle" id="secQuestion2" class="validate">
                                         <option disabled>Select Question</option>
                                         <option value="petname">What was your first petname</option>
                                         <option value="hometown">What is your hometown</option>
@@ -109,7 +109,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="col">
                                 <div class="input-field col s8 offset-s7">
-                                    <select style="display:block" name=title" id="title" class="validate">
+                                    <select style="display:block" name="title" id="title" class="validate">
                                         <option disabled>Choose Title</option>
                                         <option value="Mr">Mr</option>
                                         <option value="Ms">Ms</option>
@@ -237,10 +237,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-21T13:44:00.029
+                  DATE: 2023-02-21T14:23:43.555
                   SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/register.scala.html
-                  HASH: 6e356c4fe4095920fee3ef80e3d0b4e1f8eafdfa
-                  MATRIX: 951->1|1071->28|2696->1628|2711->1634|2763->1665|7617->6526|7671->6551|8016->6906|8070->6931|8427->7292|8481->7317|8815->7655|8869->7680|9201->8014|9255->8039|9579->8381|9633->8406|9960->8736|10014->8761|10343->9103|10397->9128|10738->9476|10792->9501|11136->9852|11190->9877|11550->10209|11587->10236|11627->10237|11685->10266|11789->10342|11827->10358|11885->10387|11982->10452|12036->10477
+                  HASH: 8444db8c91ed8c44cd195ad5792b9ad7930082a8
+                  MATRIX: 951->1|1071->28|2696->1628|2711->1634|2763->1665|7621->6530|7675->6555|8020->6910|8074->6935|8431->7296|8485->7321|8819->7659|8873->7684|9205->8018|9259->8043|9583->8385|9637->8410|9964->8740|10018->8765|10347->9107|10401->9132|10742->9480|10796->9505|11140->9856|11194->9881|11554->10213|11591->10240|11631->10241|11689->10270|11793->10346|11831->10362|11889->10391|11986->10456|12040->10481
                   LINES: 28->1|33->2|62->31|62->31|62->31|139->108|140->109|146->115|147->116|153->122|154->123|160->129|161->130|167->136|168->137|174->143|175->144|181->150|182->151|188->157|189->158|195->164|196->165|202->171|203->172|209->178|209->178|209->178|210->179|211->180|211->180|212->181|214->183|215->184
                   -- GENERATED --
               */

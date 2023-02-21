@@ -50,6 +50,8 @@ public class UserController extends Controller {
         String username = req.get("username").asText();
         String password = req.get("password").asText();
         String secQuestion1 = req.get("secQuestion1").asText();
+
+
         String secAnswer1 = req.get("secAnswer1").asText();
         String secQuestion2 = req.get("secQuestion1").asText();
         String secAnswer2 = req.get("secAnswer1").asText();

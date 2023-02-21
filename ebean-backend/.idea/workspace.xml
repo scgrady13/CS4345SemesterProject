@@ -6,132 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2447b557-cb6c-43f5-a408-c9c892372257" name="Changes" comment="Updated gitignore file and uploaded new project target files">
       <change beforePath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$1a1eb371105c7c8b830d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$1a1eb371105c7c8b830d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$1a1eb371105c7c8b830d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3154e26b790fdfb6c24b$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3154e26b790fdfb6c24b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3154e26b790fdfb6c24b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3154e26b790fdfb6c24b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3e994a3d66243d1ee0f9$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3e994a3d66243d1ee0f9$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3e994a3d66243d1ee0f9.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$3e994a3d66243d1ee0f9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$034837cc9ff6089c05bd$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$034837cc9ff6089c05bd$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$034837cc9ff6089c05bd.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$034837cc9ff6089c05bd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$39b70c3bf4003f41807f$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$39b70c3bf4003f41807f$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$39b70c3bf4003f41807f.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$39b70c3bf4003f41807f.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$4bcab8613c703eadf369$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$4bcab8613c703eadf369$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$4bcab8613c703eadf369.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$4bcab8613c703eadf369.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$5428a50c2edb73d9d094$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$5428a50c2edb73d9d094$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$5428a50c2edb73d9d094.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$5428a50c2edb73d9d094.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$6c100d47a672e2e6aa15$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$6c100d47a672e2e6aa15$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$6c100d47a672e2e6aa15.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$6c100d47a672e2e6aa15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$963b2d1febfc14e50baa$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$963b2d1febfc14e50baa$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$963b2d1febfc14e50baa.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$963b2d1febfc14e50baa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7$$anonfun$client$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7$$anonfun$client$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7$$anonfun$client$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7$$anonfun$client$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$aeb9369f05ec40bb0fe7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$b0687275b806af56f174$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$b0687275b806af56f174$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$b0687275b806af56f174.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/project/target/config-classes/$b0687275b806af56f174.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/register$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/register$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1085fac05907b3ff5db8$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1085fac05907b3ff5db8.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1085fac05907b3ff5db8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8a5229e911b927148ece$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8a5229e911b927148ece.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8a5229e911b927148ece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ef5a76267f97c21bd7c5$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ef5a76267f97c21bd7c5.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ef5a76267f97c21bd7c5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$033368bc5dba86c9a27a$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$033368bc5dba86c9a27a$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$033368bc5dba86c9a27a.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$033368bc5dba86c9a27a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21d3845f897d2666cf3b$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21d3845f897d2666cf3b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21d3845f897d2666cf3b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21d3845f897d2666cf3b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3193864c1a1f9256a975$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3193864c1a1f9256a975$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3193864c1a1f9256a975.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3193864c1a1f9256a975.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3cb76056d22e6c39a331$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3cb76056d22e6c39a331$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3cb76056d22e6c39a331.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3cb76056d22e6c39a331.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3d7bbc5fd21172207b4e$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3d7bbc5fd21172207b4e$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3d7bbc5fd21172207b4e.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3d7bbc5fd21172207b4e.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f74fb58c4eb9c66f249$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f74fb58c4eb9c66f249$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f74fb58c4eb9c66f249.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f74fb58c4eb9c66f249.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$695270f2b25c22713158$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$695270f2b25c22713158$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$695270f2b25c22713158.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$695270f2b25c22713158.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$77cde762bd226a7600ce$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$77cde762bd226a7600ce$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$77cde762bd226a7600ce.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$77cde762bd226a7600ce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$af43194cdba1aaac9aad$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$af43194cdba1aaac9aad$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$af43194cdba1aaac9aad.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$af43194cdba1aaac9aad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06$$anonfun$root$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06$$anonfun$root$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06$$anonfun$root$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06$$anonfun$root$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b886d032e8b8b0b77e06.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c38fc23edfd2f4c5af1d$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c38fc23edfd2f4c5af1d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c38fc23edfd2f4c5af1d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c38fc23edfd2f4c5af1d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff8e8a3289425c3198bb$$anonfun$$sbtdef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff8e8a3289425c3198bb$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff8e8a3289425c3198bb.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff8e8a3289425c3198bb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/models/User$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/models/User$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +119,7 @@
       <workItem from="1676943549704" duration="2435000" />
       <workItem from="1676991434919" duration="4777000" />
       <workItem from="1677006859515" duration="327000" />
-      <workItem from="1677007195620" duration="607000" />
+      <workItem from="1677007195620" duration="1874000" />
     </task>
     <servers />
   </component>

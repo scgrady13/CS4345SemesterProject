@@ -36,7 +36,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Play Setup Demo</title>
+        <title>CS Department TA Management System</title>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -51,7 +51,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <center><strong>Login to Account</strong></center>
             </h1>
         </header>
 
@@ -107,10 +107,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-20T19:45:39.684
+                  DATE: 2023-02-21T14:23:43.613
                   SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/login.scala.html
-                  HASH: 35dca9e6949486fa9ac000f0cb94ff87b88db485
-                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|4183->2824|4198->2830|4243->2854
+                  HASH: be123593b494795c661bea0133866ebc2ee11ef4
+                  MATRIX: 948->1|1068->28|2693->1628|2708->1634|2759->1664|3514->2392|3550->2419|3589->2420|3646->2449|3749->2525|3786->2541|3843->2570|3939->2635|3992->2660|4220->2861|4235->2867|4280->2891
                   LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|87->56|87->56|87->56
                   -- GENERATED --
               */
