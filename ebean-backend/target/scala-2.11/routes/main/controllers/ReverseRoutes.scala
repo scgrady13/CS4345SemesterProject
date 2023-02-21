@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 19:40:52 CST 2023
+// @DATE:Mon Feb 20 20:09:58 CST 2023
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -24,6 +24,12 @@ package controllers {
     def index(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix)
+    }
+  
+    // @LINE:15
+    def info(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "info")
     }
   
   }

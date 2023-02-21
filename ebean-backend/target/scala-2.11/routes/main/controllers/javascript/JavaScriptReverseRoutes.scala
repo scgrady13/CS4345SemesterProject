@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 19:40:52 CST 2023
+// @DATE:Mon Feb 20 20:09:58 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -29,6 +29,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:15
+    def info: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.info",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "info"})
         }
       """
     )
