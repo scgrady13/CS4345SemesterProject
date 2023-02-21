@@ -51,90 +51,83 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Register New User</strong>
+                <center><strong>Register New User</strong></center>
             </h1>
         </header>
 
 
         <div class="row">
-            <div class="card col s4 offset-s4 ">
+            <div class="card col s6 offset-s3">
                 <div class="card-panel">
                     <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.signupHandler()),format.raw/*31.73*/("""" method="GET">
-
+                        <center><strong>Login Info</strong></center><br>
                         <div class="row">
                             <div class="input-field col s12">
-
                                 <input id="username" name="username" type="text" class="validate">
                                 <label for="username">Username</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-
                                 <input id="password" name="password" type="password" class="validate">
                                 <label for="password">Password</label>
                             </div>
                         </div>
+                        <center><strong>Security Questions</strong></center><br>
                         <div class="row">
-                            <label>Security Question 2</label>
-                            <div class="dropdown-toggle">
-                                <input id="secQuestion1" name="secQuestion1"  list="datalist-questions1" class="validate" type="" placeholder="Select Question">
-                                <datalist id="datalist-questions1">
-                                    <select name="secQuestion1">
-                                        <option>What was your first pets name</option>
-                                        <option>Where were you born</option>
-                                        <option>What was the name of your elementary school</option>
-                                        <option>What is your favorite movie</option>
+                            <div class="form-group">
+                                <select style="display:block" class="selection-handle" name=secQuestion1" id="secQuestion2" class="validate">
+                                    <option disabled>Select Question</option>
+                                    <option value="petname">What was your first petname</option>
+                                    <option value="hometown">What is your hometown</option>
+                                    <option value="school">What was your elementary school name</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="secAnswer1" name="secAnswer1" type= "text" class="validate" placeholder="Answer Question">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-select-button">
+                                    <select style="display:block" class="selection-handle" name=secQuestion2" id="secQuestion2" class="validate">
+                                        <option disabled>Select Question</option>
+                                        <option value="petname">What was your first petname</option>
+                                        <option value="hometown">What is your hometown</option>
+                                        <option value="school">What was your elementary school name</option>
                                     </select>
-                                </datalist>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="secAnswer1" name="secAnswer1" type="text" class="validate" placeholder="Answer Here">
+                                <input id="secAnswer2" name="secAnswer2" type= "text" class="validate" placeholder="Answer Question">
                             </div>
                         </div>
+                        <center><strong>Personal Information</strong></center><br>
+
                         <div class="row">
-                            <label>Security Question 2</label>
-                            <div class="dropdown">
-                                <input id="secQuestion2" name="secQuestion2"  list="datalist-questions2" class="validate" type="" placeholder="Select Question">
-                                <datalist id="datalist-questions2">
-                                    <select name="secQuestion2">
-                                       <option>What was your first pets name</option>
-                                        <option>Where were you born</option>
-                                        <option>What was the name of your elementary school</option>
-                                        <option>What is your favorite movie</option>
+                            <div class="col">
+                                <div class="input-field col s8 offset-s7">
+                                    <select style="display:block" name=title" id="title" class="validate">
+                                        <option disabled>Choose Title</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Dr">Dr</option>
                                     </select>
-                                </datalist>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="secAnswer2" name="secAnswer2" type="text" class="validate" placeholder="Answer Here">
+                            <div class="col">
+                                <div class="input-field col s30 offset-s3">
+                                    <input id="firstname" name="firstname" type="text" class="validate">
+                                    <label for="firstname">First Name</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="dropdown">
-                                <input id="title" name="title" type="" list="datalist-titles" class="validate" placeholder="Select Title"/>
-                                <datalist id="datalist-titles">
-                                    <select name=title">
-                                        <option>Mr</option>
-                                        <option>Ms</option>
-                                        <option>Dr</option>
-                                    </select>
-                                </datalist>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="firstname" name="firstname" type="text" class="validate">
-                                <label for="firstname">First Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="lastname" name="lastname" type="text" class="validate">
-                                <label for="lastname">Last Name</label>
+                            <div class="col">
+                                <div class="input-field col s14 offset-s2">
+                                    <input id="lastname" name="lastname" type="text" class="validate">
+                                    <label for="lastname">Last Name</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -143,83 +136,83 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <label for="research">Research Areas</label>
                             </div>
                         </div>
-"""),format.raw/*115.37*/("""
-                        """),format.raw/*116.25*/("""<div class="row">
+"""),format.raw/*108.37*/("""
+                        """),format.raw/*109.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="position" name="position" type="text" class="validate">
                                 <label for="position">Position</label>
                             </div>
                         </div>
-"""),format.raw/*122.40*/("""
-                        """),format.raw/*123.25*/("""<div class="row">
+"""),format.raw/*115.40*/("""
+                        """),format.raw/*116.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="affiliation" name="affiliation" type="text" class="validate">
                                 <label for="affiliation">Affiliation</label>
                             </div>
                         </div>
-"""),format.raw/*129.34*/("""
-                        """),format.raw/*130.25*/("""<div class="row">
+"""),format.raw/*122.34*/("""
+                        """),format.raw/*123.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="email" name="email" type="email" class="validate">
                                 <label for="email">Email</label>
                             </div>
                         </div>
-"""),format.raw/*136.34*/("""
-                        """),format.raw/*137.25*/("""<div class="row">
+"""),format.raw/*129.34*/("""
+                        """),format.raw/*130.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="phone" name="phone" type="tel" class="validate">
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
-"""),format.raw/*143.32*/("""
-                        """),format.raw/*144.25*/("""<div class="row">
+"""),format.raw/*136.32*/("""
+                        """),format.raw/*137.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="fax" name="fax" type="tel" class="validate">
                                 <label for="fax">Fax</label>
                             </div>
                         </div>
-"""),format.raw/*150.48*/("""
-                        """),format.raw/*151.25*/("""<div class="row">
+"""),format.raw/*143.48*/("""
+                        """),format.raw/*144.25*/("""<div class="row">
                             <div class="text-area">
                                 <input id="address" name="address" type="text" class="validate">
                                 <label for="fax">Address</label>
                             </div>
                         </div>
-"""),format.raw/*157.33*/("""
-                        """),format.raw/*158.25*/("""<div class="row">
+"""),format.raw/*150.33*/("""
+                        """),format.raw/*151.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="city" name="city" type="text" class="validate">
                                 <label for="city">City</label>
                             </div>
                         </div>
-"""),format.raw/*164.43*/("""
-                        """),format.raw/*165.25*/("""<div class="row">
+"""),format.raw/*157.43*/("""
+                        """),format.raw/*158.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="country" name="country" type="text" class="validate">
                                 <label for="country">Country</label>
                             </div>
                         </div>
-"""),format.raw/*171.37*/("""
-                        """),format.raw/*172.25*/("""<div class="row">
+"""),format.raw/*164.37*/("""
+                        """),format.raw/*165.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="zipCode" name="zipCode" type="number" class="validate">
                                 <label for="zipCode">Zip Code</label>
                             </div>
                         </div>
-"""),format.raw/*178.37*/("""
-                        """),format.raw/*179.25*/("""<div class="row">
+"""),format.raw/*171.37*/("""
+                        """),format.raw/*172.25*/("""<div class="row">
                             <div class="text-input">
                                 <input id="comments" name="comments" type="text" class="validate">
                                 <label for="comments">Comments</label>
                             </div>
                         </div>
-                        """),_display_(/*185.26*/if(authorizeMessage!= null)/*185.53*/{_display_(Seq[Any](format.raw/*185.54*/("""
-                            """),format.raw/*186.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*187.30*/authorizeMessage),format.raw/*187.46*/("""
-                            """),format.raw/*188.29*/("""</div>
+                        """),_display_(/*178.26*/if(authorizeMessage!= null)/*178.53*/{_display_(Seq[Any](format.raw/*178.54*/("""
+                            """),format.raw/*179.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*180.30*/authorizeMessage),format.raw/*180.46*/("""
+                            """),format.raw/*181.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*190.26*/("""
-                        """),format.raw/*191.25*/("""<div class="row">
+                        """)))}),format.raw/*183.26*/("""
+                        """),format.raw/*184.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
                     </form>
@@ -244,11 +237,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-21T11:52:33.302
+                  DATE: 2023-02-21T13:44:00.029
                   SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/register.scala.html
-                  HASH: b45d4e8718f12bd3f8bf8fe4a10678aff8dd5852
-                  MATRIX: 951->1|1071->28|2680->1612|2695->1618|2747->1649|7717->6626|7771->6651|8116->7006|8170->7031|8527->7392|8581->7417|8915->7755|8969->7780|9301->8114|9355->8139|9679->8481|9733->8506|10060->8836|10114->8861|10443->9203|10497->9228|10838->9576|10892->9601|11236->9952|11290->9977|11650->10309|11687->10336|11727->10337|11785->10366|11889->10442|11927->10458|11985->10487|12082->10552|12136->10577
-                  LINES: 28->1|33->2|62->31|62->31|62->31|146->115|147->116|153->122|154->123|160->129|161->130|167->136|168->137|174->143|175->144|181->150|182->151|188->157|189->158|195->164|196->165|202->171|203->172|209->178|210->179|216->185|216->185|216->185|217->186|218->187|218->187|219->188|221->190|222->191
+                  HASH: 6e356c4fe4095920fee3ef80e3d0b4e1f8eafdfa
+                  MATRIX: 951->1|1071->28|2696->1628|2711->1634|2763->1665|7617->6526|7671->6551|8016->6906|8070->6931|8427->7292|8481->7317|8815->7655|8869->7680|9201->8014|9255->8039|9579->8381|9633->8406|9960->8736|10014->8761|10343->9103|10397->9128|10738->9476|10792->9501|11136->9852|11190->9877|11550->10209|11587->10236|11627->10237|11685->10266|11789->10342|11827->10358|11885->10387|11982->10452|12036->10477
+                  LINES: 28->1|33->2|62->31|62->31|62->31|139->108|140->109|146->115|147->116|153->122|154->123|160->129|161->130|167->136|168->137|174->143|175->144|181->150|182->151|188->157|189->158|195->164|196->165|202->171|203->172|209->178|209->178|209->178|210->179|211->180|211->180|212->181|214->183|215->184
                   -- GENERATED --
               */
           

@@ -1,27 +1,4 @@
-2023-02-21 08:58:31,367 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
-2023-02-21 08:58:31,591 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-02-21 08:58:32,366 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
-2023-02-21 08:59:04,545 [INFO] from application in application-akka.actor.default-dispatcher-5 - infosBuffer(Username: username1, Password: 123, Firstname: Sean)
-2023-02-21 09:04:59,979 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2023-02-21 09:05:00,246 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2023-02-21 09:05:00,284 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-02-21 09:05:00,459 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
-2023-02-21 09:05:00,483 [INFO] from application in application-akka.actor.default-dispatcher-2 - infosBuffer(Username: username1, Password: 123, Firstname: Sean)
-2023-02-21 09:05:00,485 [INFO] from application in application-akka.actor.default-dispatcher-2 - infosBuffer(Username: abc, Password: 123, Firstname: add)
-2023-02-21 09:05:29,482 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2023-02-21 09:05:29,693 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2023-02-21 09:05:29,722 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-02-21 09:05:29,898 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2023-02-21 09:05:29,914 [INFO] from application in application-akka.actor.default-dispatcher-3 - infosBuffer(Username: username1, Password: 123, Firstname: Sean)
-2023-02-21 09:19:06,528 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=2m36s589ms).
-2023-02-21 09:20:00,245 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=53s719ms).
-2023-02-21 09:27:28,256 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=7m28s11ms).
-2023-02-21 09:32:33,566 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2023-02-21 09:32:33,824 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2023-02-21 09:32:33,861 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-02-21 09:32:34,013 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
-2023-02-21 09:32:34,228 [INFO] from application in application-akka.actor.default-dispatcher-4 - infosBuffer(Username: username1, Password: 123, Firstname: Sean, Username: abc, Password: 123, Firstname: add, Username: asfasdf, Password: 1314, Firstname: haha, Username: 123, Password: 123, Firstname: 123)
-2023-02-21 09:47:19,186 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-4 housekeeper - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1m15s117ms).
-2023-02-21 10:51:14,420 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-4 housekeeper - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1m54s606ms).
-2023-02-21 10:52:36,104 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-4 housekeeper - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1m21s688ms).
-2023-02-21 11:05:56,105 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-4 housekeeper - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13m20s1ms).
+2023-02-21 13:20:40,919 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
+2023-02-21 13:20:41,141 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-02-21 13:20:41,813 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
+2023-02-21 13:37:41,137 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s663ms), soft-evicting connections from pool.

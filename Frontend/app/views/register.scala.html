@@ -20,90 +20,83 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Register New User</strong>
+                <center><strong>Register New User</strong></center>
             </h1>
         </header>
 
 
         <div class="row">
-            <div class="card col s4 offset-s4 ">
+            <div class="card col s6 offset-s3">
                 <div class="card-panel">
                     <form action="@routes.HomeController.signupHandler()" method="GET">
-
+                        <center><strong>Login Info</strong></center><br>
                         <div class="row">
                             <div class="input-field col s12">
-
                                 <input id="username" name="username" type="text" class="validate">
                                 <label for="username">Username</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-
                                 <input id="password" name="password" type="password" class="validate">
                                 <label for="password">Password</label>
                             </div>
                         </div>
+                        <center><strong>Security Questions</strong></center><br>
                         <div class="row">
-                            <label>Security Question 2</label>
-                            <div class="dropdown">
-                                <input id="secQuestion1" name="secQuestion1"  list="datalist-questions1" class="validate" type="" placeholder="Select Question">
-                                <datalist id="datalist-questions1">
-                                    <select name="secQuestion1">
-                                        <option>What was your first pets name</option>
-                                        <option>Where were you born</option>
-                                        <option>What was the name of your elementary school</option>
-                                        <option>What is your favorite movie</option>
+                            <div class="form-group">
+                                <select style="display:block" class="selection-handle" name=secQuestion1" id="secQuestion2" class="validate">
+                                    <option disabled>Select Question</option>
+                                    <option value="petname">What was your first petname</option>
+                                    <option value="hometown">What is your hometown</option>
+                                    <option value="school">What was your elementary school name</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="secAnswer1" name="secAnswer1" type= "text" class="validate" placeholder="Answer Question">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-select-button">
+                                    <select style="display:block" class="selection-handle" name=secQuestion2" id="secQuestion2" class="validate">
+                                        <option disabled>Select Question</option>
+                                        <option value="petname">What was your first petname</option>
+                                        <option value="hometown">What is your hometown</option>
+                                        <option value="school">What was your elementary school name</option>
                                     </select>
-                                </datalist>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="secAnswer1" name="secAnswer1" type="text" class="validate" placeholder="Answer Here">
+                                <input id="secAnswer2" name="secAnswer2" type= "text" class="validate" placeholder="Answer Question">
                             </div>
                         </div>
+                        <center><strong>Personal Information</strong></center><br>
+
                         <div class="row">
-                            <label>Security Question 2</label>
-                            <div class="dropdown">
-                                <input id="secQuestion2" name="secQuestion2"  list="datalist-questions2" class="validate" type="" placeholder="Select Question">
-                                <datalist id="datalist-questions2">
-                                    <select name="secQuestion2">
-                                       <option>What was your first pets name</option>
-                                        <option>Where were you born</option>
-                                        <option>What was the name of your elementary school</option>
-                                        <option>What is your favorite movie</option>
+                            <div class="col">
+                                <div class="input-field col s8 offset-s7">
+                                    <select style="display:block" name=title" id="title" class="validate">
+                                        <option disabled>Choose Title</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Dr">Dr</option>
                                     </select>
-                                </datalist>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="secAnswer2" name="secAnswer2" type="text" class="validate" placeholder="Answer Here">
+                            <div class="col">
+                                <div class="input-field col s30 offset-s3">
+                                    <input id="firstname" name="firstname" type="text" class="validate">
+                                    <label for="firstname">First Name</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="dropdown">
-                                <input id="title" name="title" type="" list="datalist-titles" class="validate" placeholder="Select Title"/>
-                                <datalist id="datalist-titles">
-                                    <select name=title">
-                                        <option>Mr</option>
-                                        <option>Ms</option>
-                                        <option>Dr</option>
-                                    </select>
-                                </datalist>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="firstname" name="firstname" type="text" class="validate">
-                                <label for="firstname">First Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="lastname" name="lastname" type="text" class="validate">
-                                <label for="lastname">Last Name</label>
+                            <div class="col">
+                                <div class="input-field col s14 offset-s2">
+                                    <input id="lastname" name="lastname" type="text" class="validate">
+                                    <label for="lastname">Last Name</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
