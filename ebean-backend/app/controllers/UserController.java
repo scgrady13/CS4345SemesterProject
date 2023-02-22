@@ -7,6 +7,8 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.util.ArrayList;
+
 
 /**
  * @description: user reg/login
@@ -45,13 +47,12 @@ public class UserController extends Controller {
      * @return success if valid, fail if already taken
      */
     public Result registerNew() {
+        //TODO fix courses to list all courses taken not only take in one course
         System.out.println("In register");
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
         String secQuestion1 = req.get("secQuestion1").asText();
-
-
         String secAnswer1 = req.get("secAnswer1").asText();
         String secQuestion2 = req.get("secQuestion1").asText();
         String secAnswer2 = req.get("secAnswer1").asText();
@@ -69,6 +70,14 @@ public class UserController extends Controller {
         String country = req.get("country").asText();
         String zipCode = req.get("zipCode").asText();
         String comments = req.get("comments").asText();
+        String status = req.get("status").asText();
+        String degreeplan = req.get("degreeplan").asText();
+        String startingseason = req.get("startingseason").asText();
+        String startingyear = req.get("startingyear").asText();
+        String gradseason = req.get("gradseason").asText();
+        String gradyear = req.get("gradyear").asText();
+        String previouscourses = req.get("previouscourses").asText();
+
 
         User u = User.findByName(username);
         ObjectNode result = null;
@@ -76,6 +85,13 @@ public class UserController extends Controller {
             System.out.println("new user");
             result = Json.newObject();
             User user = new User();
+            user.status=status;
+            user.degreeplan=degreeplan;
+            user.startingseason=startingseason;
+            user.startingyear=startingyear;
+            user.gradyear=gradyear;
+            user.gradseason=gradseason;
+            user.previouscourses=previouscourses;
             user.username=username;
             user.password=password;
             user.secQuestion1=secQuestion1;
@@ -96,6 +112,7 @@ public class UserController extends Controller {
             user.country=country;
             user.zipCode=zipCode;
             user.comments=comments;
+
 
             user.save();
             result.put("body", username);

@@ -26,7 +26,7 @@
 
 
         <div class="row">
-            <div class="card col s6 offset-s3">
+            <div class="card col s8 offset-s2">
                 <div class="card-panel">
                     <form action="@routes.HomeController.signupHandler()" method="GET">
                         <center><strong>Login Info</strong></center><br>
@@ -42,11 +42,122 @@
                                 <label for="password">Password</label>
                             </div>
                         </div>
+                        <br>
+                        <center><strong>Status</strong></center>
+                        <div class="row">
+                            <div class="form-select-button">
+                                <select name="status" style="display:block" class="selection-handle" id="status" class="validate" placeholder="Select Status" onchange="updateOptions()">
+                                    <option value="" disabled selected>Select Status</option>
+                                    <option value="student">Student</option>
+                                    <option value="faculty">Faculty</option>
+                                    <option value="staff">Staff</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="student-options" style="display: none">
+                            <div class="row">
+                                <label for="degreeplan">Current Degree Plan:</label>
+                                <select style="display:block" name="degreeplan" id="degreeplan" class="selection-handle">
+                                    <option value="" disabled selected>Select degree plan</option>
+                                    <option value="Ph.D.">Ph.D.</option>
+                                    <option value="D.E.-SE">D.E.-SE</option>
+                                    <option value="MS-CS">MS-CS</option>
+                                    <option value="MS-SE">MS-SE</option>
+                                    <option value="MS-Cybersecurity">MS-Cybersecurity</option>
+                                    <option value="BS-CS">BS-CS</option>
+                                    <option value="BA-CS">BA-CS</option>
+                                </select>
+                            </div>
+                            <div class="container mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <center><strong>Starting Semester</strong></center>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="startingseason">Season:</label>
+                                            <select style="display:block" name="startingseason" id="startingseason">
+                                                <option value="Spring">Spring</option>
+                                                <option value="Fall">Fall</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="startingyear">Year:</label>
+                                            <select style="display:block" name="startingyear" id="startingyear">
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <center><strong>Graduating Semester</strong></center>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="gradseason">Season:</label>
+                                            <select style="display:block" name="gradseason" id="gradseason">
+                                                <option value="Spring">Spring</option>
+                                                <option value="Fall">Fall</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="gradyear">Year:</label>
+                                            <select style="display:block" name="gradyear" id="gradyear">
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                    <label for="previouscourses">Courses taken before:</label>
+                                    <div class="select-checkboxes">
+                                    <select style="display:block; height: 200px;" name="previouscourses" id="previouscourses" multiple class="selection-handle">
+                                    <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+                                    <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+                                    <option value="CS1342">CS 1342 - Programming Concepts</option>
+                                    <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+                                    <option value="CS2341">CS 2341 - Data Structures</option>
+                                    <option value="CS3330">CS 3330 - Database Concepts</option>
+                                    <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+                                    <option value="CS3342">CS 3342 - Programming Languages</option>
+                                    <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+                                    <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+                                    <option value="CS3381">CS 3381 - Digital Logic Design</option>
+                                    <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+                                    <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+                                    <option value="CS4351">CS 4351 - Senior Design I</option>
+                                    <option value="CS4352">CS 4352 - Senior Design II</option>
+                                    <option value="CS4381">CS 4381 - Digital Computer Design</option>
+                                    <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                                function updateOptions() {
+                                    var status = document.getElementById("status").value;
+                                    if (status === "student") {
+                                        document.getElementById("student-options").style.display = "block";
+                                    } else {
+                                        document.getElementById("student-options").style.display = "none";
+                                    }
+                                }
+                        </script>
+                        <br>
                         <center><strong>Security Questions</strong></center><br>
                         <div class="row">
                             <div class="form-group">
-                                <select name="secQuestion1" style="display:block" class="selection-handle"  id="secQuestion2" class="validate">
-                                    <option disabled>Select Question</option>
+                                <select name="secQuestion1" style="display:block" class="selection-handle"  id="secQuestion2" class="validate" placeholder="Select Security Question">
+                                    <option value="" disabled selected>Select Security Question</option>
                                     <option value="petname">What was your first petname</option>
                                     <option value="hometown">What is your hometown</option>
                                     <option value="school">What was your elementary school name</option>
@@ -60,8 +171,8 @@
                         </div>
                         <div class="row">
                             <div class="form-select-button">
-                                    <select name="secQuestion2" style="display:block" class="selection-handle" id="secQuestion2" class="validate">
-                                        <option disabled>Select Question</option>
+                                    <select name="secQuestion2" style="display:block" class="selection-handle" id="secQuestion2" class="validate" placeholder="Select Security Question">
+                                        <option value = "" disabled selected>Select Security Question</option>
                                         <option value="petname">What was your first petname</option>
                                         <option value="hometown">What is your hometown</option>
                                         <option value="school">What was your elementary school name</option>
@@ -73,29 +184,31 @@
                                 <input id="secAnswer2" name="secAnswer2" type= "text" class="validate" placeholder="Answer Question">
                             </div>
                         </div>
-                        <center><strong>Personal Information</strong></center><br>
 
-                        <div class="row">
-                            <div class="col">
-                                <div class="input-field col s8 offset-s7">
-                                    <select style="display:block" name="title" id="title" class="validate">
-                                        <option disabled>Choose Title</option>
-                                        <option value="Mr">Mr</option>
-                                        <option value="Ms">Ms</option>
-                                        <option value="Dr">Dr</option>
-                                    </select>
+                        <center><strong>Personal Information</strong></center><br>
+                        <div class="container mx-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-field col">
+                                        <select style="display:block" name="title" id="title" class="validate">
+                                            <option disabled selected>Choose Title</option>
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                            <option value="Dr">Dr</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="input-field col s30 offset-s3">
-                                    <input id="firstname" name="firstname" type="text" class="validate">
-                                    <label for="firstname">First Name</label>
+                                <div class="col">
+                                    <div class="input-field">
+                                        <input id="firstname" name="firstname" type="text" class="validate">
+                                        <label for="firstname">First Name</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="input-field col s14 offset-s2">
-                                    <input id="lastname" name="lastname" type="text" class="validate">
-                                    <label for="lastname">Last Name</label>
+                                <div class="col">
+                                    <div class="input-field">
+                                        <input id="lastname" name="lastname" type="text" class="validate">
+                                        <label for="lastname">Last Name</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -134,6 +247,7 @@
                             </div>
                         </div>
 @*                        Fax*@
+                        <center><strong>Physical Address</strong></center>
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="fax" name="fax" type="tel" class="validate">
@@ -168,7 +282,7 @@
                                 <label for="zipCode">Zip Code</label>
                             </div>
                         </div>
-@*                        Comments*@
+                        <center><strong>Additional Information</strong></center>
                         <div class="row">
                             <div class="text-input">
                                 <input id="comments" name="comments" type="text" class="validate">

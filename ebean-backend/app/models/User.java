@@ -7,6 +7,7 @@ import play.data.validation.Constraints;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.List;
+import java.util.ArrayList;
 
 @Entity
 public class User extends Model {
@@ -14,13 +15,24 @@ public class User extends Model {
 
     @Id
     public Long id;
-
     @Constraints.Required
     public String username;
-
     @Constraints.Required
     public String password;
-
+    @Constraints.Required
+    public String status;
+    @Constraints.Required
+    public String degreeplan;
+    @Constraints.Required
+    public String startingseason;
+    @Constraints.Required
+    public String startingyear;
+    @Constraints.Required
+    public String gradseason;
+    @Constraints.Required
+    public String gradyear;
+    @Constraints.Required
+    public String previouscourses;
     @Constraints.Required
     public String secQuestion1;
     @Constraints.Required

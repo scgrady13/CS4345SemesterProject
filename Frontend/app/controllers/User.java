@@ -1,19 +1,24 @@
 package controllers;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 import play.libs.ws.WSClient;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
+import scala.Array;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.sql.SQLOutput;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.CompletionStage;
 
 
 public class User {
 
     private String username;
-
     private String password;
     private String secQuestion1;
     private String secQuestion2;
@@ -33,6 +38,20 @@ public class User {
     private String country;
     private String zipCode;
     private String comments;
+    private String status;
+    private String degreeplan;
+    private String startingseason;
+    private String startingyear;
+    private String gradseason;
+    private String gradyear;
+    private String previouscourses;
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -163,6 +182,55 @@ public class User {
         this.secAnswer2 = secAnswer2;
     }
 
+    public String getDegreeplan() {
+        return degreeplan;
+    }
+
+    public void setDegreeplan(String degreeplan) {
+        this.degreeplan = degreeplan;
+    }
+
+    public String getStartingseason() {
+        return startingseason;
+    }
+
+    public void setStartingseason(String startingseason) {
+        this.startingseason = startingseason;
+    }
+
+    public String getStartingyear() {
+        return startingyear;
+    }
+
+    public void setStartingyear(String startingyear) {
+        this.startingyear = startingyear;
+    }
+
+    public String getGradseason() {
+        return gradseason;
+    }
+
+    public void setGradseason(String gradseason) {
+        this.gradseason = gradseason;
+    }
+
+    public String getGradyear() {
+        return gradyear;
+    }
+
+    public void setGradyear(String gradyear) {
+        this.gradyear = gradyear;
+    }
+
+
+    public String getPreviouscourses() {
+        return previouscourses;
+    }
+
+    public void setPreviouscourses(String previouscourses) {
+        this.previouscourses = previouscourses;
+    }
+
     public CompletionStage<WSResponse> checkAuthorized() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
@@ -186,10 +254,17 @@ public class User {
         // send this. user
         ObjectNode res = Json.newObject();
         res.put("username", this.username);
-        res.put("password",this.password);
+        res.put("password", this.password);
+        res.put("status",this.status);
+        res.put("degreeplan",this.degreeplan);
+        res.put("startingseason",this.startingseason);
+        res.put("startingyear",this.startingyear);
+        res.put("gradseason",this.gradseason);
+        res.put("gradyear",this.gradyear);
+        res.put("previouscourses",this.previouscourses);
         res.put("secQuestion1", this.secQuestion1);
-        res.put("secQuestion2",this.secQuestion2);
-        res.put("secAnswer1",this.secAnswer1);
+        res.put("secQuestion2", this.secQuestion2);
+        res.put("secAnswer1", this.secAnswer1);
         res.put("secAnswer1", this.secAnswer2);
         res.put("firstname", this.firstname);
         res.put("lastname", this.lastname);
@@ -204,10 +279,19 @@ public class User {
         res.put("city", this.city);
         res.put("country", this.country);
         res.put("zipCode", this.zipCode);
-        res.put("comments",this.comments);
+        res.put("comments", this.comments);
+//        String[] selectedCoursesArray = request().body().asFormUrlEncoded().get("previouscourses");
+//        if(selectedCoursesArray != null) selectedCourses.addAll(Arrays.asList(selectedCoursesArray));
 
         System.out.println(username);
         System.out.println(password);
+        System.out.println(status);
+        System.out.println(degreeplan);
+        System.out.println(startingseason);
+        System.out.println(startingyear);
+        System.out.println(gradseason);
+        System.out.println(gradyear);
+        System.out.println(previouscourses);
         System.out.println(secQuestion1);
         System.out.println(secQuestion2);
         System.out.println(secAnswer1);
@@ -226,6 +310,9 @@ public class User {
         System.out.println(country);
         System.out.println(zipCode);
         System.out.println(comments);
+
+        System.out.println();
+
 
 
         WSRequest request = ws.url("http://localhost:9005/signup");
