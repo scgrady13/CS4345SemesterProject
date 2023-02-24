@@ -45,21 +45,33 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+        <style>
+                header.topbar """),format.raw/*18.31*/("""{"""),format.raw/*18.32*/("""
+                    """),format.raw/*19.21*/("""background-color: #4a4e4d;
+                    padding: 10px;
+                    color: #fff;
+                """),format.raw/*22.17*/("""}"""),format.raw/*22.18*/("""
+                """),format.raw/*23.17*/("""button.btn """),format.raw/*23.28*/("""{"""),format.raw/*23.29*/("""
+                    """),format.raw/*24.21*/("""background-color: #4a4e4d;
+                    border: none;
+                """),format.raw/*26.17*/("""}"""),format.raw/*26.18*/("""
+                """),format.raw/*27.17*/("""button.btn:hover """),format.raw/*27.34*/("""{"""),format.raw/*27.35*/("""
+                    """),format.raw/*28.21*/("""background-color: #3F51B5;
+                """),format.raw/*29.17*/("""}"""),format.raw/*29.18*/("""
+        """),format.raw/*30.9*/("""</style>
+
+
     </head>
     <body>
-
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
-                <center><strong>Register New User</strong></center>
-            </h1>
+            <h5 class="focused">
+                <center>Register New User</center>
+            </h5>
         </header>
-
-
         <div class="row">
             <div class="card col s8 offset-s2">
                 <div class="card-panel">
-                    <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.signupHandler()),format.raw/*31.73*/("""" method="GET">
+                    <form action=""""),_display_(/*43.36*/routes/*43.42*/.HomeController.signupHandler()),format.raw/*43.73*/("""" method="GET">
                         <center><strong>Login Info</strong></center><br>
                         <div class="row">
                             <div class="input-field col s12">
@@ -174,15 +186,15 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                             </div>
                         </div>
                         <script>
-                                function updateOptions() """),format.raw/*146.58*/("""{"""),format.raw/*146.59*/("""
-                                    """),format.raw/*147.37*/("""var status = document.getElementById("status").value;
-                                    if (status === "student") """),format.raw/*148.63*/("""{"""),format.raw/*148.64*/("""
-                                        """),format.raw/*149.41*/("""document.getElementById("student-options").style.display = "block";
-                                    """),format.raw/*150.37*/("""}"""),format.raw/*150.38*/(""" """),format.raw/*150.39*/("""else """),format.raw/*150.44*/("""{"""),format.raw/*150.45*/("""
-                                        """),format.raw/*151.41*/("""document.getElementById("student-options").style.display = "none";
-                                    """),format.raw/*152.37*/("""}"""),format.raw/*152.38*/("""
-                                """),format.raw/*153.33*/("""}"""),format.raw/*153.34*/("""
-                        """),format.raw/*154.25*/("""</script>
+                                function updateOptions() """),format.raw/*158.58*/("""{"""),format.raw/*158.59*/("""
+                                    """),format.raw/*159.37*/("""var status = document.getElementById("status").value;
+                                    if (status === "student") """),format.raw/*160.63*/("""{"""),format.raw/*160.64*/("""
+                                        """),format.raw/*161.41*/("""document.getElementById("student-options").style.display = "block";
+                                    """),format.raw/*162.37*/("""}"""),format.raw/*162.38*/(""" """),format.raw/*162.39*/("""else """),format.raw/*162.44*/("""{"""),format.raw/*162.45*/("""
+                                        """),format.raw/*163.41*/("""document.getElementById("student-options").style.display = "none";
+                                    """),format.raw/*164.37*/("""}"""),format.raw/*164.38*/("""
+                                """),format.raw/*165.33*/("""}"""),format.raw/*165.34*/("""
+                        """),format.raw/*166.25*/("""</script>
                         <br>
                         <center><strong>Security Questions</strong></center><br>
                         <div class="row">
@@ -249,65 +261,65 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <label for="research">Research Areas</label>
                             </div>
                         </div>
-"""),format.raw/*221.37*/("""
-                        """),format.raw/*222.25*/("""<div class="row">
+"""),format.raw/*233.37*/("""
+                        """),format.raw/*234.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="position" name="position" type="text" class="validate">
                                 <label for="position">Position</label>
                             </div>
                         </div>
-"""),format.raw/*228.40*/("""
-                        """),format.raw/*229.25*/("""<div class="row">
+"""),format.raw/*240.40*/("""
+                        """),format.raw/*241.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="affiliation" name="affiliation" type="text" class="validate">
                                 <label for="affiliation">Affiliation</label>
                             </div>
                         </div>
-"""),format.raw/*235.34*/("""
-                        """),format.raw/*236.25*/("""<div class="row">
+"""),format.raw/*247.34*/("""
+                        """),format.raw/*248.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="email" name="email" type="email" class="validate">
                                 <label for="email">Email</label>
                             </div>
                         </div>
-"""),format.raw/*242.34*/("""
-                        """),format.raw/*243.25*/("""<div class="row">
+"""),format.raw/*254.34*/("""
+                        """),format.raw/*255.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="phone" name="phone" type="tel" class="validate">
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
-"""),format.raw/*249.32*/("""
-                        """),format.raw/*250.25*/("""<center><strong>Physical Address</strong></center>
+"""),format.raw/*261.32*/("""
+                        """),format.raw/*262.25*/("""<center><strong>Physical Address</strong></center>
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="fax" name="fax" type="tel" class="validate">
                                 <label for="fax">Fax</label>
                             </div>
                         </div>
-"""),format.raw/*257.48*/("""
-                        """),format.raw/*258.25*/("""<div class="row">
+"""),format.raw/*269.48*/("""
+                        """),format.raw/*270.25*/("""<div class="row">
                             <div class="text-area">
                                 <input id="address" name="address" type="text" class="validate">
                                 <label for="fax">Address</label>
                             </div>
                         </div>
-"""),format.raw/*264.33*/("""
-                        """),format.raw/*265.25*/("""<div class="row">
+"""),format.raw/*276.33*/("""
+                        """),format.raw/*277.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="city" name="city" type="text" class="validate">
                                 <label for="city">City</label>
                             </div>
                         </div>
-"""),format.raw/*271.43*/("""
-                        """),format.raw/*272.25*/("""<div class="row">
+"""),format.raw/*283.43*/("""
+                        """),format.raw/*284.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="country" name="country" type="text" class="validate">
                                 <label for="country">Country</label>
                             </div>
                         </div>
-"""),format.raw/*278.37*/("""
-                        """),format.raw/*279.25*/("""<div class="row">
+"""),format.raw/*290.37*/("""
+                        """),format.raw/*291.25*/("""<div class="row">
                             <div class="input-field col s12">
                                 <input id="zipCode" name="zipCode" type="number" class="validate">
                                 <label for="zipCode">Zip Code</label>
@@ -320,13 +332,13 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <label for="comments">Comments</label>
                             </div>
                         </div>
-                        """),_display_(/*292.26*/if(authorizeMessage!= null)/*292.53*/{_display_(Seq[Any](format.raw/*292.54*/("""
-                            """),format.raw/*293.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*294.30*/authorizeMessage),format.raw/*294.46*/("""
-                            """),format.raw/*295.29*/("""</div>
+                        """),_display_(/*304.26*/if(authorizeMessage!= null)/*304.53*/{_display_(Seq[Any](format.raw/*304.54*/("""
+                            """),format.raw/*305.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*306.30*/authorizeMessage),format.raw/*306.46*/("""
+                            """),format.raw/*307.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*297.26*/("""
-                        """),format.raw/*298.25*/("""<div class="row">
+                        """)))}),format.raw/*309.26*/("""
+                        """),format.raw/*310.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
                     </form>
@@ -351,11 +363,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-21T19:31:13.359
+                  DATE: 2023-02-24T13:21:30.120
                   SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/register.scala.html
-                  HASH: a9328c284cfd198fba0ba00e99a2ef12107ecf64
-                  MATRIX: 951->1|1071->28|2696->1628|2711->1634|2763->1665|11166->10039|11196->10040|11262->10077|11407->10193|11437->10194|11507->10235|11640->10339|11670->10340|11700->10341|11734->10346|11764->10347|11834->10388|11966->10491|11996->10492|12058->10525|12088->10526|12142->10551|16543->14959|16597->14984|16942->15339|16996->15364|17353->15725|17407->15750|17741->16088|17795->16113|18127->16447|18181->16472|18580->16889|18634->16914|18961->17244|19015->17269|19344->17611|19398->17636|19739->17984|19793->18009|20573->18761|20610->18788|20650->18789|20708->18818|20812->18894|20850->18910|20908->18939|21005->19004|21059->19029
-                  LINES: 28->1|33->2|62->31|62->31|62->31|177->146|177->146|178->147|179->148|179->148|180->149|181->150|181->150|181->150|181->150|181->150|182->151|183->152|183->152|184->153|184->153|185->154|252->221|253->222|259->228|260->229|266->235|267->236|273->242|274->243|280->249|281->250|288->257|289->258|295->264|296->265|302->271|303->272|309->278|310->279|323->292|323->292|323->292|324->293|325->294|325->294|326->295|328->297|329->298
+                  HASH: bb14f5eb89297d3218fc65a01c807cff21b0607e
+                  MATRIX: 951->1|1071->28|2342->1273|2371->1274|2420->1295|2559->1406|2588->1407|2633->1424|2672->1435|2701->1436|2750->1457|2855->1534|2884->1535|2929->1552|2974->1569|3003->1570|3052->1591|3123->1634|3152->1635|3188->1644|3551->1980|3566->1986|3618->2017|12021->10391|12051->10392|12117->10429|12262->10545|12292->10546|12362->10587|12495->10691|12525->10692|12555->10693|12589->10698|12619->10699|12689->10740|12821->10843|12851->10844|12913->10877|12943->10878|12997->10903|17398->15311|17452->15336|17797->15691|17851->15716|18208->16077|18262->16102|18596->16440|18650->16465|18982->16799|19036->16824|19435->17241|19489->17266|19816->17596|19870->17621|20199->17963|20253->17988|20594->18336|20648->18361|21428->19113|21465->19140|21505->19141|21563->19170|21667->19246|21705->19262|21763->19291|21860->19356|21914->19381
+                  LINES: 28->1|33->2|49->18|49->18|50->19|53->22|53->22|54->23|54->23|54->23|55->24|57->26|57->26|58->27|58->27|58->27|59->28|60->29|60->29|61->30|74->43|74->43|74->43|189->158|189->158|190->159|191->160|191->160|192->161|193->162|193->162|193->162|193->162|193->162|194->163|195->164|195->164|196->165|196->165|197->166|264->233|265->234|271->240|272->241|278->247|279->248|285->254|286->255|292->261|293->262|300->269|301->270|307->276|308->277|314->283|315->284|321->290|322->291|335->304|335->304|335->304|336->305|337->306|337->306|338->307|340->309|341->310
                   -- GENERATED --
               */
           
