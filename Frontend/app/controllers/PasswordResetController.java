@@ -1,11 +1,17 @@
 package controllers;
+import play.core.j.HttpExecutionContext;
 import play.data.DynamicForm;
 import play.data.FormFactory;
 import play.mvc.Controller;
 import play.mvc.Result;
 import java.util.Random;
+import javax.inject.Inject;
+import java.util.concurrent.CompletionStage;
 
 public class PasswordResetController extends Controller {
+
+    @Inject
+    HttpExecutionContext ec;
 
     public Result resetPasswordForm() {
         return ok(views.html.resetpassword.render(""));

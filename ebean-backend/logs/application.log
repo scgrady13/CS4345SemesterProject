@@ -1,3 +1,4 @@
-2023-03-01 10:01:25,181 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2023-03-01 10:01:25,543 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2023-03-01 10:01:26,413 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2023-03-01 12:23:17,974 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2023-03-01 12:23:18,230 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/CS4345?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2023-03-01 12:23:19,153 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2023-03-01 12:33:09,544 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s132ms).

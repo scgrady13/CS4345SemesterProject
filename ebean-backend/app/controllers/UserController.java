@@ -40,13 +40,15 @@ public class UserController extends Controller {
     }
     public Result passwordChangeRequest(){
         System.out.println("In password change request");
+        System.out.println("In password change request");
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String email = req.get("email").asText();
-
+        String a1 = req.get("secAnswer1").asText();
+        String a2 = req.get("secAnswer2").asText();
         try {
             User user = User.findByName(username);
-            if(user != null && username.equals(user.username) && email.equals(user.email))
+            if(user != null && username.equals(user.username) && email.equals(user.email) && a1.equals(user.secAnswer1) && a2.equals(user.secAnswer2))
             {
                 return ok("true");
             }else

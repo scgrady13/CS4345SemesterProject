@@ -75,13 +75,23 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                                 <label for="email">Email</label>
                             </div>
                         </div>
-                        """),_display_(/*47.26*/if(authorizeMessage!= null)/*47.53*/{_display_(Seq[Any](format.raw/*47.54*/("""
-                            """),format.raw/*48.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*49.30*/authorizeMessage),format.raw/*49.46*/("""
-                            """),format.raw/*50.29*/("""</div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="secAnswer1" name="secAnswer1" type="text" class="validate">
+                                <label for="secAnswer1">What was the name of your first pet?</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="secAnswer2" name="secAnswer2" type="text" class="validate">
+                                <label for="secAnswer2">What is your hometown?</label>
+                            </div>
+                        </div>
+                        """),_display_(/*57.26*/if(authorizeMessage!= null)/*57.53*/{_display_(Seq[Any](format.raw/*57.54*/("""
+                            """),format.raw/*58.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*59.30*/authorizeMessage),format.raw/*59.46*/("""
+                            """),format.raw/*60.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*52.26*/("""
-                        """),format.raw/*53.25*/("""<div class="row">
+                        """)))}),format.raw/*62.26*/("""
+                        """),format.raw/*63.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
                     </form>
@@ -106,11 +116,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-28T20:18:52.602
+                  DATE: 2023-03-01T11:41:11.128
                   SOURCE: /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/app/views/resetpassword.scala.html
-                  HASH: c4c5238285c45039d81cf99ba4935765e580ffb8
-                  MATRIX: 956->1|1076->28|2701->1628|2716->1634|2775->1672|3515->2385|3551->2412|3590->2413|3647->2442|3750->2518|3787->2534|3844->2563|3940->2628|3993->2653
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53
+                  HASH: 525752d6d82390a47fb1975cbe3e02e103868ffb
+                  MATRIX: 956->1|1076->28|2701->1628|2716->1634|2775->1672|4176->3046|4212->3073|4251->3074|4308->3103|4411->3179|4448->3195|4505->3224|4601->3289|4654->3314
+                  LINES: 28->1|33->2|62->31|62->31|62->31|88->57|88->57|88->57|89->58|90->59|90->59|91->60|93->62|94->63
                   -- GENERATED --
               */
           

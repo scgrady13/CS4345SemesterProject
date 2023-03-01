@@ -43,6 +43,23 @@ public class HomeController extends Controller {
         return ok(views.html.resetpassword.render(null));
     }
 
+//    public Result securityCheck(){return ok(views.html.securityCheck.render(""));}
+//
+//    public CompletionStage<Result> securityCheckHandler()
+//    {
+//        Form<User> securityForm = formFactory.form(User.class).bindFromRequest();
+//        if(securityForm.hasErrors())
+//        {
+//            return(CompletionStage<Result>)badRequest(views.html.securityCheck.render("Form Error"));
+//        }
+//        return securityForm.get().checkAuthorized()
+//                .thenApplyAsync((WSResponse r) -> {
+//                    if(r.getStatus() == 200 && r.asJson() != null)
+//                    {
+//                        return ok(views.html.login.render("Password sent to "))
+//                    }
+//                })
+//    }
     public CompletionStage<Result> passwordResetHandler()
     {
         Form<User> passwordResetForm = formFactory.form(User.class).bindFromRequest();
@@ -60,7 +77,7 @@ public class HomeController extends Controller {
                         String newPass = PasswordResetController.generatePassword();
                         System.out.println("Password Generated: " + newPass);
                         session("email", passwordResetForm.get().getEmail()); // store username in session
-                        return ok(views.html.securityCheck.render("Temp Reset page! Password reset tool sent to " + passwordResetForm.get().getEmail()));
+                        return ok(views.html.login.render("New Password sent to " + passwordResetForm.get().getEmail()));
                     }
                     else {
                         System.out.println("response null");
