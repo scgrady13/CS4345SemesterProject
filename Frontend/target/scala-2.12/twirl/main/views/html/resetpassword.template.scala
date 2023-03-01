@@ -59,7 +59,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.loginHandler()),format.raw/*31.72*/("""" method="GET">
+                    <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.passwordResetHandler()),format.raw/*31.80*/("""" method="GET">
 
                         <div class="row">
                             <div class="input-field col s12">
@@ -71,8 +71,8 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                         <div class="row">
                             <div class="input-field col s12">
 
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
+                                <input id="email" name="email" type="email" class="validate">
+                                <label for="email">Email</label>
                             </div>
                         </div>
                         """),_display_(/*47.26*/if(authorizeMessage!= null)/*47.53*/{_display_(Seq[Any](format.raw/*47.54*/("""
@@ -106,10 +106,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2023-02-22T15:29:31.652
-                  SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/resetpassword.scala.html
-                  HASH: 61d07f2b45ab0b7624c3ae3bcf72be28d57d8c69
-                  MATRIX: 956->1|1076->28|2701->1628|2716->1634|2767->1664|3522->2392|3558->2419|3597->2420|3654->2449|3757->2525|3794->2541|3851->2570|3947->2635|4000->2660
+                  DATE: 2023-02-28T20:18:52.602
+                  SOURCE: /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/app/views/resetpassword.scala.html
+                  HASH: c4c5238285c45039d81cf99ba4935765e580ffb8
+                  MATRIX: 956->1|1076->28|2701->1628|2716->1634|2775->1672|3515->2385|3551->2412|3590->2413|3647->2442|3750->2518|3787->2534|3844->2563|3940->2628|3993->2653
                   LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53
                   -- GENERATED --
               */

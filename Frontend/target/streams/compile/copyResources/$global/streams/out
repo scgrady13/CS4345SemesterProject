@@ -1,4 +1,4 @@
 [debug] Copy resource mappings: 
-[debug] 	(/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/logback.xml,/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/target/scala-2.12/classes/logback.xml)
-[debug] 	(/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/application.conf,/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/target/scala-2.12/classes/application.conf)
-[debug] 	(/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes,/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/target/scala-2.12/classes/routes)
+[debug] 	(/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/logback.xml,/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/target/scala-2.12/classes/logback.xml)
+[debug] 	(/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/application.conf,/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/target/scala-2.12/classes/application.conf)
+[debug] 	(/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/routes,/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/target/scala-2.12/classes/routes)

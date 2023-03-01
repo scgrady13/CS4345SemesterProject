@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 20:09:58 CST 2023
+// @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/ebean-backend/conf/routes
+// @DATE:Tue Feb 28 19:28:25 CST 2023
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -26,7 +26,7 @@ package controllers {
       Call("GET", _prefix)
     }
   
-    // @LINE:15
+    // @LINE:19
     def info(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "info")
@@ -41,6 +41,12 @@ package controllers {
     }
 
   
+    // @LINE:17
+    def passwordChangeRequest(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "resetpassword")
+    }
+  
     // @LINE:9
     def authenticate(): Call = {
       import ReverseRouteContext.empty
@@ -49,8 +55,16 @@ package controllers {
   
     // @LINE:13
     def registerNew(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "signup")
+    
+      () match {
+      
+        // @LINE:13
+        case ()  =>
+          import ReverseRouteContext.empty
+          Call("POST", _prefix + { _defaultPrefix } + "signup")
+      
+      }
+    
     }
   
   }

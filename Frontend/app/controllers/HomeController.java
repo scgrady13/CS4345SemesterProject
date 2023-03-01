@@ -60,7 +60,7 @@ public class HomeController extends Controller {
                         String newPass = PasswordResetController.generatePassword();
                         System.out.println("Password Generated: " + newPass);
                         session("email", passwordResetForm.get().getEmail()); // store username in session
-                        return ok(views.html.index.render("Temp Reset page! Password reset tool sent to " + passwordResetForm.get().getEmail()));
+                        return ok(views.html.securityCheck.render("Temp Reset page! Password reset tool sent to " + passwordResetForm.get().getEmail()));
                     }
                     else {
                         System.out.println("response null");

@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/}frontend-build...
+[info] Updating {file:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/}frontend-build...
 [debug] :: resolving dependencies :: default#frontend-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -13271,21 +13271,21 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.7!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1585ms :: artifacts dl 40ms
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT compile produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT runtime produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT test produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT provided produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-provided.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT optional produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-optional.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT compile-internal produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile-internal.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT runtime-internal produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime-internal.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT test-internal produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test-internal.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT plugin produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-plugin.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT sources produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-sources.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT docs produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-docs.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT pom produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-pom.xml
-[debug] 	report for default#frontend-build;0.1-SNAPSHOT scala-tool produced in /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-scala-tool.xml
-[debug] 	resolve done (1585ms resolve - 40ms download)
+[debug] :: resolution report :: resolve 1838ms :: artifacts dl 55ms
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT compile produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT runtime produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT test produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT provided produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-provided.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT optional produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-optional.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT compile-internal produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-compile-internal.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT runtime-internal produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-runtime-internal.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT test-internal produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-test-internal.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT plugin produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-plugin.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT sources produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-sources.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT docs produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-docs.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT pom produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-pom.xml
+[debug] 	report for default#frontend-build;0.1-SNAPSHOT scala-tool produced in /Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-frontend-build-scala-tool.xml
+[debug] 	resolve done (1838ms resolve - 55ms download)
 [info] Done updating.
 [warn] Found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
 [warn] 
