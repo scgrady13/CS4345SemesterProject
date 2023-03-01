@@ -12,5 +12,10 @@ POST     /login                      controllers.UserController.authenticate()
 # Add User  {"name":name, "password":password}
 POST    /signup                      controllers.UserController.registerNew()
 
+POST    /signup                      controllers.UserController.registerNew()
+
+POST    /resetpassword                controllers.UserController.passwordChangeRequest()
+
 GET     /info                        controllers.HomeController.info()
+
 

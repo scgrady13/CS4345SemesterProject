@@ -38,7 +38,27 @@ public class UserController extends Controller {
         }
 
     }
+    public Result passwordChangeRequest(){
+        System.out.println("In password change request");
+        JsonNode req = request().body().asJson();
+        String username = req.get("username").asText();
+        String email = req.get("email").asText();
 
+        try {
+            User user = User.findByName(username);
+            if(user != null && username.equals(user.username) && email.equals(user.email))
+            {
+                return ok("true");
+            }else
+            {
+                return ok("false");
+            }
+        }
+        catch(Exception e)
+        {
+            return ok("false");
+        }
+    }
 
     /**
      * When a user register, check if the username is taken
