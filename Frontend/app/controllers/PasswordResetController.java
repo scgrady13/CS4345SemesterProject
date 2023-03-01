@@ -50,7 +50,7 @@ public class PasswordResetController extends Controller {
 
     public static String generatePassword() {
         // Generate a random password of length 8
-        String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+-=[]{}|;':\",./<>?";
+        String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*";
         Random rand = new Random();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 8; i++) {
