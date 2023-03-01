@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/ebean-backend/conf/routes
-// @DATE:Tue Feb 28 19:28:25 CST 2023
+// @DATE:Wed Mar 01 13:15:01 CST 2023
 
 package router
 
@@ -45,7 +45,6 @@ class Routes(
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserController.authenticate()"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """resetpassword""", """controllers.UserController.passwordChangeRequest()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """info""", """controllers.HomeController.info()"""),
@@ -107,28 +106,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_UserController_registerNew3_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
-  )
-  private[this] lazy val controllers_UserController_registerNew3_invoker = createInvoker(
-    UserController_1.registerNew(),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.UserController",
-      "registerNew",
-      Nil,
-      "POST",
-      """""",
-      this.prefix + """signup"""
-    )
-  )
-
   // @LINE:17
-  private[this] lazy val controllers_UserController_passwordChangeRequest4_route = Route("POST",
+  private[this] lazy val controllers_UserController_passwordChangeRequest3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("resetpassword")))
   )
-  private[this] lazy val controllers_UserController_passwordChangeRequest4_invoker = createInvoker(
+  private[this] lazy val controllers_UserController_passwordChangeRequest3_invoker = createInvoker(
     UserController_1.passwordChangeRequest(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -142,10 +124,10 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_HomeController_info5_route = Route("GET",
+  private[this] lazy val controllers_HomeController_info4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("info")))
   )
-  private[this] lazy val controllers_HomeController_info5_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_info4_invoker = createInvoker(
     HomeController_0.info(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -179,22 +161,16 @@ class Routes(
         controllers_UserController_registerNew2_invoker.call(UserController_1.registerNew())
       }
   
-    // @LINE:15
-    case controllers_UserController_registerNew3_route(params) =>
-      call { 
-        controllers_UserController_registerNew3_invoker.call(UserController_1.registerNew())
-      }
-  
     // @LINE:17
-    case controllers_UserController_passwordChangeRequest4_route(params) =>
+    case controllers_UserController_passwordChangeRequest3_route(params) =>
       call { 
-        controllers_UserController_passwordChangeRequest4_invoker.call(UserController_1.passwordChangeRequest())
+        controllers_UserController_passwordChangeRequest3_invoker.call(UserController_1.passwordChangeRequest())
       }
   
     // @LINE:19
-    case controllers_HomeController_info5_route(params) =>
+    case controllers_HomeController_info4_route(params) =>
       call { 
-        controllers_HomeController_info5_invoker.call(HomeController_0.info())
+        controllers_HomeController_info4_invoker.call(HomeController_0.info())
       }
   }
 }

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/ebean-backend/conf/routes
-// @DATE:Tue Feb 28 19:28:25 CST 2023
+// @DATE:Wed Mar 01 13:15:01 CST 2023
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -55,16 +55,8 @@ package controllers {
   
     // @LINE:13
     def registerNew(): Call = {
-    
-      () match {
-      
-        // @LINE:13
-        case ()  =>
-          import ReverseRouteContext.empty
-          Call("POST", _prefix + { _defaultPrefix } + "signup")
-      
-      }
-    
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "signup")
     }
   
   }

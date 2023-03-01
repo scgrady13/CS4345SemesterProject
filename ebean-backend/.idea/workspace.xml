@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2447b557-cb6c-43f5-a408-c9c892372257" name="Changes" comment="Updated gitignore file and uploaded new project target files">
+    <list default="true" id="2447b557-cb6c-43f5-a408-c9c892372257" name="Changes" comment="pushing so miles can look -- backend">
       <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/PasswordResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/PasswordResetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/resetpassword.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/resetpassword.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/securityCheck.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/securityCheck.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/resetpassword$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/resetpassword$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/resetpassword.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/resetpassword.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/securityCheck.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/securityCheck.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +66,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c0bb5886-ef07-466c-a8ea-066740a19324" />
+        <option name="url" value="https://github.com/scgrady13/TASystem.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -186,8 +187,16 @@
       <workItem from="1677262196215" duration="864000" />
       <workItem from="1677633801172" duration="865000" />
       <workItem from="1677636905026" duration="2420000" />
-      <workItem from="1677686227060" duration="4552000" />
+      <workItem from="1677686227060" duration="6551000" />
     </task>
+    <task id="LOCAL-00001" summary="pushing so miles can look -- backend">
+      <created>1677695971191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677695971191</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +227,23 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated gitignore file and uploaded new project target files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore file and uploaded new project target files" />
+    <MESSAGE value="pushing so miles can look -- backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing so miles can look -- backend" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
+          <line>20</line>
+          <properties class="controllers.UserController" method="authenticate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -67,17 +67,18 @@ public class HomeController extends Controller {
         {
             return(CompletionStage<Result>)badRequest(views.html.resetpassword.render("Form Error"));
         }
-        return passwordResetForm.get().checkAuthorized()
+        return passwordResetForm.get().passwordChangeSecurityCheck()
                 .thenApplyAsync((WSResponse r) -> {
                     System.out.println("Status Code: " + r.getStatus());
 
-                    if(r.getStatus() == 200 && r.asJson() != null )//&& r.asJson().asBoolean())
+                    if(r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean())
                     {
                         System.out.println(r.asJson());
                         String newPass = PasswordResetController.generatePassword();
                         System.out.println("Password Generated: " + newPass);
                         session("email", passwordResetForm.get().getEmail()); // store username in session
-                        return ok(views.html.login.render("New Password sent to " + passwordResetForm.get().getEmail()));
+                       return ok(views.html.login.render("New Password sent to " + passwordResetForm.get().getEmail()));
+                        //return ok(resetpassword.render(""));
                     }
                     else {
                         System.out.println("response null");

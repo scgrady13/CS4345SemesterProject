@@ -245,6 +245,22 @@ public class User {
                     return r;
                 });
     }
+    public CompletionStage<WSResponse> passwordChangeSecurityCheck()
+    {
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        WSRequest request = ws.url("http://localhost:9005/resetpassword");
+        ObjectNode res = Json.newObject();
+        res.put("username", this.username);
+        res.put("email", this.email);
+        res.put("secAnswer1", this.secAnswer1);
+        res.put("secAnswer2",this.secAnswer2);
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
 
 
 
