@@ -11,5 +11,10 @@ GET     /signup                     controllers.HomeController.signup()
 
 GET     /register                   controllers.HomeController.signupHandler()
 
+GET     /resetpassword              controllers.HomeController.passwordReset()
+
+GET     /reset                      controllers.HomeController.passwordResetHandler()
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
