@@ -8,6 +8,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 
 /**
@@ -50,6 +51,14 @@ public class UserController extends Controller {
             User user = User.findByName(username);
             if(user != null && username.equals(user.username) && email.equals(user.email) && a1.equals(user.secAnswer1) && a2.equals(user.secAnswer2))
             {
+//                user.password = generatePassword();
+//                System.out.println("Password: " + user.password);
+                String newPass = generatePassword();
+                user.setPassword(newPass);
+//                user.password = newPass;
+                user.save();
+//                ObjectNode res = Json.newObject();
+//                res.put("password", user.password);
                 return ok("true");
             }else
             {
@@ -60,6 +69,16 @@ public class UserController extends Controller {
         {
             return ok("false");
         }
+    }
+    public static String generatePassword() {
+        // Generate a random password of length 8
+        String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*";
+        Random rand = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 8; i++) {
+            sb.append(chars.charAt(rand.nextInt(chars.length())));
+        }
+        return sb.toString();
     }
 
     /**

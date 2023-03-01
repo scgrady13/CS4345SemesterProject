@@ -91,4 +91,9 @@ public class User extends Model {
                 .eq("username", name)
                 .findUnique();
     }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
 }
