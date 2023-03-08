@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 20:09:58 CST 2023
+// @SOURCE:/Users/davidberberian/Desktop/TaSystemnow/TASystem/ebean-backend/conf/routes
+// @DATE:Tue Mar 07 10:59:25 CST 2023
 
 package router
 
@@ -47,6 +47,8 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserController.authenticate()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """info""", """controllers.HomeController.info()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """forminfo""", """controllers.HomeController.formInfo()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """application""", """controllers.UserController.NewTaForm()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -122,6 +124,40 @@ class Routes(
     )
   )
 
+  // @LINE:17
+  private[this] lazy val controllers_HomeController_formInfo4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("forminfo")))
+  )
+  private[this] lazy val controllers_HomeController_formInfo4_invoker = createInvoker(
+    HomeController_0.formInfo(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "formInfo",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """forminfo"""
+    )
+  )
+
+  // @LINE:19
+  private[this] lazy val controllers_UserController_NewTaForm5_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("application")))
+  )
+  private[this] lazy val controllers_UserController_NewTaForm5_invoker = createInvoker(
+    UserController_1.NewTaForm(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "NewTaForm",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """application"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -147,6 +183,18 @@ class Routes(
     case controllers_HomeController_info3_route(params) =>
       call { 
         controllers_HomeController_info3_invoker.call(HomeController_0.info())
+      }
+  
+    // @LINE:17
+    case controllers_HomeController_formInfo4_route(params) =>
+      call { 
+        controllers_HomeController_formInfo4_invoker.call(HomeController_0.formInfo())
+      }
+  
+    // @LINE:19
+    case controllers_UserController_NewTaForm5_route(params) =>
+      call { 
+        controllers_UserController_NewTaForm5_invoker.call(UserController_1.NewTaForm())
       }
   }
 }

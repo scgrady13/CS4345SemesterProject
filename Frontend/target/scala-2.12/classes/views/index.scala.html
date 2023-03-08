@@ -1,32 +1,165 @@
 @(message: String)
     @import java.math.BigInteger;var i = 0
+
 <!DOCTYPE html>
 <html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>User Portal</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+        <title>Student Portal</title>
+        <style>
+                /* Add some basic styling for the page */
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f7f7f7;
+                    text-align: center;
+                }
+
+                header.topbar {
+                    background-color: #4a4e4d;
+                    padding: 10px;
+                    color: #fff;
+                    font-family: Arial, sans-serif;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                li {
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: #fff;
+                    border none;
+                    border-radius: 5px;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    /*border: 1px solid #ccc;*/
+                }
+                input[type="submit"] {
+                    background-color: #4a4e4d;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                input[type="submit"]:hover {
+                    background-color: #3F51B5;
+                }
+
+                .card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border none;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px;
+                }
+               job-title {
+                    border none;
+                    flex-basis: 30%;
+                    text-align: left;
+                }
+
+                job-description {
+                    border none;
+                    flex-basis: 60%;
+                    text-align: center;
+                }
+
+                job-apply {
+                    border none;
+                    flex-basis: 10%;
+                    text-align: right;
+                }
+        </style>
+    </head>
+
     <body>
-
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
-                <strong>Login Message</strong>
-            </h1>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">@message</p>
-
-            <br>if statement in scala<br>
-            @if(message.equals("success")) {
-                <h3>Login Successful</h3>
-            } else {
-                <h3>Login failed</h3>
-            }
-
-            <br><br>
-            <br>for loop in scala<br>
-            <ul>
-            @for(i <- 0 to 5){
-                <li> @(i) </li>
-            }
-            </ul>
+            <p>@(message + "!")</p>
         </header>
+        <br>
+        <div style="display:flex;justify-content:space-between;margin-left:10px">
+            <div style="display:flex;align-items:center">
+                <div class="job-apply">
+                    <form action="#" method="post">
+                        <input type="submit" value="Log Out" />
+                    </form>
+                </div>
+                @*                    <button style="background-color:transparent;border:none;">Log Out</button>*@
+            </div>
+            <div style="display:flex;align-items:center;margin-right:10px">
+                <div class="job-apply">
+                    <form action="#" method="post">
+                        <input type="submit" value="Current Applications" />
+                    </form>
+                </div>
+                @*                    <button style="background-color:transparent;border:none;">Current Applications</button>*@
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="job-title">
+                        <h6>CS1341</h6>
+                    </div>
+                    <div class="job-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum tortor vitae ultricies sodales.</p>
+                    </div>
+                    <div class="job-apply">
+                        <form action="#" method="post">
+                            <input type="submit" value="Apply" />
+                        </form>
+                    </div>
+                </div>
+            </li>
 
+            <li>
+                <div class="card">
+                    <div class="job-title">
+                        <h6>CS2342</h6>
+                    </div>
+                    <div class="job-description">
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    </div>
+                    <div class="job-apply">
+                        <form action="@routes.HomeController.taForm()" method="GET">
+                            <input type="submit" value="Apply" />
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </body>
 </html>

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes
-// @DATE:Mon Feb 20 19:45:38 CST 2023
+// @SOURCE:/Users/davidberberian/Desktop/TaSystemnow/TASystem/Frontend/conf/routes
+// @DATE:Tue Mar 07 23:36:04 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,12 +19,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:12
-    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.signupHandler",
+    // @LINE:17
+    def taForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.taForm",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "taForm"})
         }
       """
     )
@@ -39,22 +39,42 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
     // @LINE:8
     def loginHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.loginHandler",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.signupHandler",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def TaSubmitHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.TaSubmitHandler",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "SubmitTA"})
+        }
+      """
+    )
+  
+    // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )
