@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [debug] Using parent loader for play common classloader: sun.misc.Launcher$ExtClassLoader@1b4569e7
 =======
 [debug] Using parent loader for play common classloader: sun.misc.Launcher$ExtClassLoader@5c7a7305
 >>>>>>> Stashed changes
+=======
+[debug] Using parent loader for play common classloader: sun.misc.Launcher$ExtClassLoader@55f8cba3
+>>>>>>> main
