@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 20:09:58 CST 2023
+// @SOURCE:/Users/davidberberian/Desktop/TaSystemnow/TASystem/ebean-backend/conf/routes
+// @DATE:Tue Mar 07 10:59:25 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -22,6 +22,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:17
+    def formInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.formInfo",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "forminfo"})
+        }
+      """
+    )
   
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -52,6 +62,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:19
+    def NewTaForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.NewTaForm",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "application"})
+        }
+      """
+    )
   
     // @LINE:9
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(

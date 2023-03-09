@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 2023-02-21 14:21:16,110 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+=======
+2023-03-08 00:24:10,360 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+>>>>>>> Stashed changes
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
+<<<<<<< Updated upstream
 2023-02-21 14:21:16,136 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev) (no global state)
 2023-02-21 14:23:51,276 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
@@ -588,3 +593,9 @@ Caused by: java.lang.NullPointerException: null
     play.filters.hosts.AllowedHostsFilter
 
 2023-02-21 20:25:16,841 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-124 - Application started (Dev) (no global state)
+=======
+2023-03-08 00:24:10,398 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev) (no global state)
+2023-03-08 00:25:01,676 [INFO] from application in application-akka.actor.default-dispatcher-4 - http://localhost:9005/forminfo
+2023-03-08 00:25:01,779 [INFO] from application in application-akka.actor.default-dispatcher-4 - http://localhost:9005/forminfo
+2023-03-08 00:25:43,801 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-shutdown-hook-1 - Stopping server...
+>>>>>>> Stashed changes

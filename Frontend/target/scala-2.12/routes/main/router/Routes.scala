@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes
-// @DATE:Mon Feb 20 19:45:38 CST 2023
+// @SOURCE:/Users/davidberberian/Desktop/TaSystemnow/TASystem/Frontend/conf/routes
+// @DATE:Tue Mar 07 23:36:04 CST 2023
 
 package router
 
@@ -45,6 +45,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.HomeController.signupHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """taForm""", """controllers.HomeController.taForm()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """SubmitTA""", """controllers.HomeController.TaSubmitHandler()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -142,6 +144,42 @@ class Routes(
     )
   )
 
+  // @LINE:17
+  private[this] lazy val controllers_HomeController_taForm5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("taForm")))
+  )
+  private[this] lazy val controllers_HomeController_taForm5_invoker = createInvoker(
+    HomeController_1.taForm(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "taForm",
+      Nil,
+      "GET",
+      this.prefix + """taForm""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:19
+  private[this] lazy val controllers_HomeController_TaSubmitHandler6_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("SubmitTA")))
+  )
+  private[this] lazy val controllers_HomeController_TaSubmitHandler6_invoker = createInvoker(
+    HomeController_1.TaSubmitHandler(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "TaSubmitHandler",
+      Nil,
+      "GET",
+      this.prefix + """SubmitTA""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -173,6 +211,18 @@ class Routes(
     case controllers_Assets_at4_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         controllers_Assets_at4_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:17
+    case controllers_HomeController_taForm5_route(params@_) =>
+      call { 
+        controllers_HomeController_taForm5_invoker.call(HomeController_1.taForm())
+      }
+  
+    // @LINE:19
+    case controllers_HomeController_TaSubmitHandler6_route(params@_) =>
+      call { 
+        controllers_HomeController_TaSubmitHandler6_invoker.call(HomeController_1.TaSubmitHandler())
       }
   }
 }

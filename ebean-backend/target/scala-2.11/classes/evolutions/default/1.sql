@@ -3,6 +3,17 @@
 
 # --- !Ups
 
+create table ta_application (
+  id                            bigint auto_increment not null,
+  username                      varchar(255),
+  preference                    varchar(255),
+  preference1all                varchar(255),
+  preference2                   varchar(255),
+  preference3                   varchar(255),
+  notpreferred                  varchar(255),
+  constraint pk_ta_application primary key (id)
+);
+
 create table user (
   id                            bigint auto_increment not null,
   username                      varchar(255),
@@ -37,6 +48,8 @@ create table user (
 
 
 # --- !Downs
+
+drop table if exists ta_application;
 
 drop table if exists user;
 

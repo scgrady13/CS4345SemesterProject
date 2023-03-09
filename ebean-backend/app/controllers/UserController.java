@@ -2,6 +2,7 @@ package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import models.TaApplication;
 import models.User;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -118,6 +119,50 @@ public class UserController extends Controller {
             result.put("body", username);
         }
         return ok(result);
+    }
+
+
+    public Result NewTaForm() {
+        //TODO add multi field and resume save
+
+        System.out.println("In Taform");
+        JsonNode req = request().body().asJson();
+
+        String username = req.get("username").asText();
+        String preference = req.get("preference1").asText();
+        String preference1all = req.get("preference1all").asText();
+        String preference2 = req.get("preference2").asText();
+        String preference3 = req.get("preference3").asText();
+        String notpreferred = req.get("notpreferred").asText();
+        System.out.println("username = " + username);
+        System.out.println("1st preference = " + preference);
+
+
+
+
+            ObjectNode result1 = Json.newObject();
+
+            TaApplication form = new TaApplication();
+            form.username=username;
+            form.preference=preference;
+            form.preference1all=preference1all;
+            form.preference2=preference2;
+            form.preference3=preference3;
+            form.notpreferred=notpreferred;
+
+
+
+        System.out.println("new user");
+            form.save();
+
+            result1.put("body", username);
+        System.out.println("returning");
+        return ok(result1);
+    }
+    public JsonNode toJson(){
+
+        JsonNode node = Json.toJson(this);
+        return node;
     }
 
 }
