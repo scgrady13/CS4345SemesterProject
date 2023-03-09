@@ -1,16 +1,9 @@
 package models;
-
-import com.avaje.ebean.ExpressionList;
 import com.avaje.ebean.Model;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import play.data.validation.Constraints;
-import play.libs.Json;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.List;
-import java.util.ArrayList;
+
 
 @Entity
 public class User extends Model {
@@ -99,6 +92,11 @@ public class User extends Model {
                 .where()
                 .eq("username", name)
                 .findUnique();
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
     }
 
 

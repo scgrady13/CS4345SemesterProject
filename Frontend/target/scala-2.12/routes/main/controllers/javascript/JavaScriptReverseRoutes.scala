@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes
-// @DATE:Mon Feb 20 19:45:38 CST 2023
+// @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/routes
+// @DATE:Tue Feb 28 20:53:43 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,12 +19,22 @@ package controllers.javascript {
     }
 
   
-    // @LINE:12
-    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.signupHandler",
+    // @LINE:16
+    def passwordResetHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.passwordResetHandler",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reset"})
+        }
+      """
+    )
+  
+    // @LINE:14
+    def passwordReset: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.passwordReset",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "resetpassword"})
         }
       """
     )
@@ -39,16 +49,6 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
     // @LINE:8
     def loginHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.loginHandler",
@@ -59,9 +59,29 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:12
+    def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.signupHandler",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
+        }
+      """
+    )
+  
+    // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:15
+  // @LINE:20
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -69,7 +89,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:15
+    // @LINE:20
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """

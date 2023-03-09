@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes
-// @DATE:Mon Feb 20 19:45:38 CST 2023
+// @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/routes
+// @DATE:Tue Feb 28 20:53:43 CST 2023
 
 package router
 
@@ -16,7 +16,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
   HomeController_1: controllers.HomeController,
-  // @LINE:15
+  // @LINE:20
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -25,7 +25,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
     HomeController_1: controllers.HomeController,
-    // @LINE:15
+    // @LINE:20
     Assets_0: controllers.Assets
   ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
@@ -44,6 +44,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.HomeController.signupHandler()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """resetpassword""", """controllers.HomeController.passwordReset()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reset""", """controllers.HomeController.passwordResetHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -124,11 +126,47 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_Assets_at4_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_HomeController_passwordReset4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("resetpassword")))
+  )
+  private[this] lazy val controllers_HomeController_passwordReset4_invoker = createInvoker(
+    HomeController_1.passwordReset(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "passwordReset",
+      Nil,
+      "GET",
+      this.prefix + """resetpassword""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:16
+  private[this] lazy val controllers_HomeController_passwordResetHandler5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reset")))
+  )
+  private[this] lazy val controllers_HomeController_passwordResetHandler5_invoker = createInvoker(
+    HomeController_1.passwordResetHandler(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "passwordResetHandler",
+      Nil,
+      "GET",
+      this.prefix + """reset""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_Assets_at6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at4_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at6_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -169,10 +207,22 @@ class Routes(
         controllers_HomeController_signupHandler3_invoker.call(HomeController_1.signupHandler())
       }
   
-    // @LINE:15
-    case controllers_Assets_at4_route(params@_) =>
+    // @LINE:14
+    case controllers_HomeController_passwordReset4_route(params@_) =>
+      call { 
+        controllers_HomeController_passwordReset4_invoker.call(HomeController_1.passwordReset())
+      }
+  
+    // @LINE:16
+    case controllers_HomeController_passwordResetHandler5_route(params@_) =>
+      call { 
+        controllers_HomeController_passwordResetHandler5_invoker.call(HomeController_1.passwordResetHandler())
+      }
+  
+    // @LINE:20
+    case controllers_Assets_at6_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at4_invoker.call(Assets_0.at(path, file))
+        controllers_Assets_at6_invoker.call(Assets_0.at(path, file))
       }
   }
 }

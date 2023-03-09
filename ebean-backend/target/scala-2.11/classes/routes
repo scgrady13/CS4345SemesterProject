@@ -14,3 +14,8 @@ POST    /signup                      controllers.UserController.registerNew()
 
 GET     /info                        controllers.HomeController.info()
 
+GET     /forminfo                        controllers.HomeController.formInfo()
+
+POST    /application                    controllers.UserController.NewTaForm()
+
+POST    /resetpassword                controllers.UserController.passwordChangeRequest()

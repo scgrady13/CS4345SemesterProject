@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/conf/routes
-// @DATE:Mon Feb 20 19:45:38 CST 2023
+// @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/Frontend/conf/routes
+// @DATE:Tue Feb 28 20:53:43 CST 2023
 
 package controllers;
 

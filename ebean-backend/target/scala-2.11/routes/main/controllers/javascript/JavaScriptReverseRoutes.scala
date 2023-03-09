@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/seangrady/Desktop/CS4345/CS4345SemesterProject/ebean-backend/conf/routes
-// @DATE:Mon Feb 20 20:09:58 CST 2023
+// @SOURCE:/Users/kendalllboesch/Desktop/Current/CS4345-SoftwareEngineering/SemProject/TAScheduler/ebean-backend/conf/routes
+// @DATE:Wed Mar 01 13:15:01 CST 2023
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -33,7 +33,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:19
     def info: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.info",
       """
@@ -52,6 +52,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:17
+    def passwordChangeRequest: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.passwordChangeRequest",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "resetpassword"})
+        }
+      """
+    )
   
     // @LINE:9
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
