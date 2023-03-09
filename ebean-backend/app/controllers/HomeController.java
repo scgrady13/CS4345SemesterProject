@@ -8,7 +8,7 @@ import scala.collection.Seq;
 
 import java.util.List;
 import java.util.ArrayList;
-
+import com.fasterxml.jackson.databind.JsonNode;
 
 
 /**
@@ -32,4 +32,31 @@ public class HomeController extends Controller {
         Logger.info("infos" + infoSeq);
         return ok(views.html.info.render(infoSeq));
     }
+
+
+
+
+
+    public Result formInfo(){
+//returns info for all users
+//return requested user in json
+
+
+        JsonNode resaultuser = null;
+        List<User> users = User.find.where().eq("email", "d@d").findList();
+        List<String> infos = new ArrayList<>();
+        for(User user: users){
+
+       resaultuser = Json.toJson(user);//find with email
+
+        }
+
+
+        return ok(resaultuser.toString());
+    }
+
+
 }
+
+
+
