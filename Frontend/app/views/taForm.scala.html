@@ -1,0 +1,252 @@
+@(user: User)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CS Department TA Management System</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <style>
+            header.topbar {
+              background-color: #4a4e4d;
+              padding: 10px;
+              color: #fff;
+            }
+            button.btn {
+              background-color: #4a4e4d;
+              border: none;
+            }
+            button.btn:hover {
+              background-color: #3F51B5;
+            }
+    </style>
+
+
+  </head>
+  <body>
+
+
+
+    <header class="topbar">
+      <h5 class="focused" style="font-size: 37px;
+        color: #57a957">
+        <center>Apply for Ta Position</center>
+      </h5>
+    </header>
+
+
+
+
+    <div class="row">
+      <div class="card col s8 offset-s2">
+        <div class="card-panel">
+
+          <div class="row">
+            <center><label for="FirstName">First Name:</label></center>
+            <center><h8 name="FirstName">@user.getFirstname</h8></center>
+
+          </div>
+
+
+
+          <div class="row">
+            <center><label for="LastName">Last Name:</label></center>
+            <center><h8 name="LastName">@user.getLastname</h8></center>
+
+          </div>
+
+          <div class="row">
+            <center><label for="Email">Email:</label></center>
+            <center><h8 name="Email">@user.getEmail</h8></center>
+
+          </div>
+
+          <div class="row">
+            <center><label for="PhoneNumber">Phone Number:</label></center>
+            <center><h8>@user.getPhone</h8></center>
+
+          </div>
+
+          <div class="row">
+            <center><label for="Current_Deg_Plan">Current Degree Plan:</label></center>
+            <center><h8 name="Current_Deg_Plan">@user.getDegreeplan</h8></center>
+
+          </div>
+
+
+          <div class="row">
+            <center><label for="Starting_Semester">Starting Semester:</label></center>
+            <center><h8 name="Starting_Semester">@user.getStartingseason</h8></center>
+
+          </div>
+
+          <div class="row">
+            <center><label for="Grad_Semester">Graduating Semester:</label></center>
+            <center><h8 name="Grad_Semester">@user.getGradseason</h8></center>
+
+          </div>
+          <form action="@routes.HomeController.TaSubmitHandler()" method="GET">
+
+          <label for="previousCourses">Courses taken before:</label>
+          <div class="select-checkboxes">
+            <select style="display:block; height: 200px;" name="previousCourses" id="previousCourses" multiple class="selection-handle">
+              <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+              <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+              <option value="CS1342">CS 1342 - Programming Concepts</option>
+              <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+              <option value="CS2341">CS 2341 - Data Structures</option>
+              <option value="CS3330">CS 3330 - Database Concepts</option>
+              <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+              <option value="CS3342">CS 3342 - Programming Languages</option>
+              <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+              <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+              <option value="CS3381">CS 3381 - Digital Logic Design</option>
+              <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+              <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+              <option value="CS4351">CS 4351 - Senior Design I</option>
+              <option value="CS4352">CS 4352 - Senior Design II</option>
+              <option value="CS4381">CS 4381 - Digital Computer Design</option>
+              <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+            </select>
+</div>
+
+
+
+          <label for="preference">1st Preference for Ta Position:</label>
+          <select style="display:block" name="preference" id="preference">
+            <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+            <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+            <option value="CS1342">CS 1342 - Programming Concepts</option>
+            <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+            <option value="CS2341">CS 2341 - Data Structures</option>
+            <option value="CS3330">CS 3330 - Database Concepts</option>
+            <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+            <option value="CS3342">CS 3342 - Programming Languages</option>
+            <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+            <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+            <option value="CS3381">CS 3381 - Digital Logic Design</option>
+            <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+            <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+            <option value="CS4351">CS 4351 - Senior Design I</option>
+            <option value="CS4352">CS 4352 - Senior Design II</option>
+            <option value="CS4381">CS 4381 - Digital Computer Design</option>
+            <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+          </select>
+
+
+
+
+            <label for="preference1all">1st Preference for all Ta Positions:</label>
+            <select style="display:block" name="preference1all" id="preference1all">
+              <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+              <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+              <option value="CS1342">CS 1342 - Programming Concepts</option>
+              <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+              <option value="CS2341">CS 2341 - Data Structures</option>
+              <option value="CS3330">CS 3330 - Database Concepts</option>
+              <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+              <option value="CS3342">CS 3342 - Programming Languages</option>
+              <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+              <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+              <option value="CS3381">CS 3381 - Digital Logic Design</option>
+              <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+              <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+              <option value="CS4351">CS 4351 - Senior Design I</option>
+              <option value="CS4352">CS 4352 - Senior Design II</option>
+              <option value="CS4381">CS 4381 - Digital Computer Design</option>
+              <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+            </select>
+
+
+            <label for="preference2">2nd Preference for Ta Position:</label>
+            <select style="display:block" name="preference2" id="preference2">
+              <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+              <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+              <option value="CS1342">CS 1342 - Programming Concepts</option>
+              <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+              <option value="CS2341">CS 2341 - Data Structures</option>
+              <option value="CS3330">CS 3330 - Database Concepts</option>
+              <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+              <option value="CS3342">CS 3342 - Programming Languages</option>
+              <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+              <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+              <option value="CS3381">CS 3381 - Digital Logic Design</option>
+              <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+              <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+              <option value="CS4351">CS 4351 - Senior Design I</option>
+              <option value="CS4352">CS 4352 - Senior Design II</option>
+              <option value="CS4381">CS 4381 - Digital Computer Design</option>
+              <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+            </select>
+
+            <label for="preference3">3rd Preference for Ta Position:</label>
+            <select style="display:block" name="preference3" id="preference3">
+              <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+              <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+              <option value="CS1342">CS 1342 - Programming Concepts</option>
+              <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+              <option value="CS2341">CS 2341 - Data Structures</option>
+              <option value="CS3330">CS 3330 - Database Concepts</option>
+              <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+              <option value="CS3342">CS 3342 - Programming Languages</option>
+              <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+              <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+              <option value="CS3381">CS 3381 - Digital Logic Design</option>
+              <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+              <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+              <option value="CS4351">CS 4351 - Senior Design I</option>
+              <option value="CS4352">CS 4352 - Senior Design II</option>
+              <option value="CS4381">CS 4381 - Digital Computer Design</option>
+              <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+            </select>
+
+
+          <label for="notpreferred">Courses preferred not to Ta for:</label>
+          <div class="select-checkboxes">
+            <select style="display:block; height: 200px;" name="notpreferred" id="notpreferred" multiple class="selection-handle">
+              <option value="CS1340">CS 1340 - Introduction to Computer Science</option>
+              <option value="CS1341">CS 1341 - Principles of Computer Science</option>
+              <option value="CS1342">CS 1342 - Programming Concepts</option>
+              <option value="CS2240">CS 2240 - Assembly Language Programming and Machine Organization</option>
+              <option value="CS2341">CS 2341 - Data Structures</option>
+              <option value="CS3330">CS 3330 - Database Concepts</option>
+              <option value="CS3339">CS 3339 - Information Assurance and Security</option>
+              <option value="CS3342">CS 3342 - Programming Languages</option>
+              <option value="CS3345">CS 3345 - Graphical User Interface Design and Implementation</option>
+              <option value="CS3353">CS 3353 - Fundamentals of Algorithms</option>
+              <option value="CS3381">CS 3381 - Digital Logic Design</option>
+              <option value="CS4344">CS 4344 - Computer Networks and Distributed Systems</option>
+              <option value="CS4345">CS 4345 - Software Engineering Principles</option>
+              <option value="CS4351">CS 4351 - Senior Design I</option>
+              <option value="CS4352">CS 4352 - Senior Design II</option>
+              <option value="CS4381">CS 4381 - Digital Computer Design</option>
+              <option value="CS5343">CS 5343 - Operating Systems and Systems Software</option>
+            </select>
+          </div>
+
+
+<div class="row">
+
+            <label name="filename">Upload Resume</label>
+            <input type="file" id="myFile" name="filename">
+
+
+</div>
+            <button class="btn" type="submit">Submit</button>
+
+</form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

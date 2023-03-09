@@ -2,7 +2,10 @@ package models;
 
 import com.avaje.ebean.ExpressionList;
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import play.data.validation.Constraints;
+import play.libs.Json;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -83,6 +86,12 @@ public class User extends Model {
     //Comments
     @Constraints.Required
     public String comments;
+
+//    public JsonNode toJson(){
+//
+//        JsonNode node = Json.toJson(this);
+//        return node;
+//    }
     public static Find<Long, User> find = new Find<Long, User>(){};
 
     public static User findByName(String name) {
@@ -92,8 +101,6 @@ public class User extends Model {
                 .findUnique();
     }
 
-    public void setPassword(String password)
-    {
-        this.password = password;
-    }
+
+
 }
