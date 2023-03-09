@@ -106,8 +106,13 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
+<<<<<<< HEAD
                   DATE: 2023-02-26T19:49:28.298
                   SOURCE: /Users/davidberberian/Desktop/TaSystemnow/TASystem/Frontend/app/views/resetpassword.scala.html
+=======
+                  DATE: 2023-02-22T15:29:31.652
+                  SOURCE: /Users/seangrady/Desktop/CS4345/CS4345SemesterProject/Frontend/app/views/resetpassword.scala.html
+>>>>>>> main
                   HASH: 61d07f2b45ab0b7624c3ae3bcf72be28d57d8c69
                   MATRIX: 956->1|1076->28|2701->1628|2716->1634|2767->1664|3522->2392|3558->2419|3597->2420|3654->2449|3757->2525|3794->2541|3851->2570|3947->2635|4000->2660
                   LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53
