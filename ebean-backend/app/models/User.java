@@ -101,6 +101,11 @@ public class User extends Model {
                 .findUnique();
     }
 
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
+
 
 
 }

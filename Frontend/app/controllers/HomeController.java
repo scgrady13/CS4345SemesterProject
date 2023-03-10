@@ -92,7 +92,39 @@ public class HomeController extends Controller {
                 }, ec.current());
 
     }
+//    public Result passwordReset(){
+//        return ok(views.html.resetpassword.render(null));
+//    }
 
+    public Result passwordReset()
+    {
+        return ok(views.html.resetpassword.render(null));
+    }
+    public CompletionStage<Result> passwordResetHandler()
+    {
+        Form<User> passwordResetForm = formFactory.form(User.class).bindFromRequest();
+        if(passwordResetForm.hasErrors())
+        {
+            return(CompletionStage<Result>)badRequest(views.html.resetpassword.render("Form Error"));
+        }
+        return passwordResetForm.get().passwordChangeSecurityCheck()
+                .thenApplyAsync((WSResponse r) -> {
+                    System.out.println("Status Code: " + r.getStatus());
+
+                    if(r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean())
+                    {
+                        System.out.println(r.asJson());
+                        session("email", passwordResetForm.get().getEmail()); // store username in session
+                        return ok(views.html.login.render("New Password sent to " + passwordResetForm.get().getEmail()));
+                        //return ok(resetpassword.render(""));
+                    }
+                    else {
+                        System.out.println("response null");
+                        String authorizeMessage = "Account Not Found";
+                        return badRequest(views.html.resetpassword.render(authorizeMessage));
+                    }
+                }, ec.current());
+    }
 
     public CompletionStage<Result> TaSubmitHandler() {
 
