@@ -23,4 +23,8 @@ GET     /taForm                         controllers.HomeController.taForm()
 
 GET     /SubmitTA                       controllers.HomeController.TaSubmitHandler()
 
+GET     /Editform                       controllers.HomeController.EditSubmitHandler()
 
+GET     /returnlogin                    controllers.HomeController.returnloginHandler()
+
+GET     /formupdate                     controllers.HomeController.EditformHandler()

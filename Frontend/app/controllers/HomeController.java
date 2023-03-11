@@ -49,6 +49,11 @@ public class HomeController extends Controller {
         return ok(views.html.register.render(null));
     }
 
+//    public CompletionStage<Result> returnloginHandler() {
+//         return ok(views.html.login.render(""));
+//    }
+
+
     public CompletionStage<Result> loginHandler() {
 
         Form<User> loginForm = formFactory.form(User.class).bindFromRequest();
@@ -92,9 +97,11 @@ public class HomeController extends Controller {
                 }, ec.current());
 
     }
-//    public Result passwordReset(){
-//        return ok(views.html.resetpassword.render(null));
-//    }
+    public Result returnloginHandler() {
+
+        return ok(views.html.login.render(null));
+
+    }
 
     public Result passwordReset()
     {
@@ -147,6 +154,43 @@ public class HomeController extends Controller {
 
     }
 
+    public Result EditSubmitHandler() {
+
+
+            RESTfulCalls.getAPI("http://localhost:9005/forminfo");
+
+            JsonNode userNode = RESTfulCalls.getAPI("http://localhost:9005/forminfo");
+
+
+            user = new User();
+
+            user.deserialize(userNode);
+
+
+            return ok(views.html.editPage.render(user));
+
+        }
+
+    public CompletionStage<Result> EditformHandler() {
+
+        Form<User> registrationForm = formFactory.form(User.class).bindFromRequest();
+        if (registrationForm.hasErrors()) {
+            return (CompletionStage<Result>) badRequest(views.html.register.render(null));
+        }
+        return registrationForm.get().EditProfile(user)
+                .thenApplyAsync((WSResponse r) -> {
+                    if (r.getStatus() == 200 && r.asJson() != null) {
+
+                        System.out.println(r.asJson());
+                        return ok(login.render(""));
+                    } else {
+                        //System.out.println(registrationForm.get().preference);//getting preference
+                        System.out.println("response null");
+                        return badRequest(views.html.login.render("Data not updated"));
+                    }
+                }, ec.current());
+
+    }
 
     public Result taForm() {
 
@@ -165,6 +209,8 @@ public class HomeController extends Controller {
         return ok(views.html.taForm.render(user));
 
     }
+
+
 
 
 }

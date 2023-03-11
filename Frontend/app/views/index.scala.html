@@ -113,7 +113,7 @@
         <div style="display:flex;justify-content:space-between;margin-left:10px">
             <div style="display:flex;align-items:center">
                 <div class="job-apply">
-                    <form action="#" method="post">
+                    <form action="@routes.HomeController.returnloginHandler()" method="GET">
                         <input type="submit" value="Log Out" />
                     </form>
                 </div>
@@ -121,8 +121,8 @@
             </div>
             <div style="display:flex;align-items:center;margin-right:10px">
                 <div class="job-apply">
-                    <form action="#" method="post">
-                        <input type="submit" value="Current Applications" />
+                    <form action="@routes.HomeController.EditSubmitHandler()" method="GET">
+                        <input type="submit" value="Edit Profile" />
                     </form>
                 </div>
                 @*                    <button style="background-color:transparent;border:none;">Current Applications</button>*@
@@ -138,7 +138,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum tortor vitae ultricies sodales.</p>
                     </div>
                     <div class="job-apply">
-                        <form action="#" method="post">
+                        <form action="@routes.HomeController.taForm()" method="GET">
                             <input type="submit" value="Apply" />
                         </form>
                     </div>
