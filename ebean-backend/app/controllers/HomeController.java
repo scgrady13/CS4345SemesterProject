@@ -43,7 +43,10 @@ public class HomeController extends Controller {
 
 
         JsonNode resaultuser = null;
-        List<User> users = User.find.where().eq("email", "d@d").findList();
+
+
+         List<User>  users = User.find.where().eq("id", "1").findList();
+
         List<String> infos = new ArrayList<>();
         for(User user: users){
 

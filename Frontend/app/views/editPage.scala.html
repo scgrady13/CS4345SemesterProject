@@ -1,4 +1,4 @@
-@(authorizeMessage: String)
+@(user: User)
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,59 +51,36 @@
                     color: #4a4e4d;
                     text-decoration: none;
                 }
-                h1 {
 
-                    font-family: Arial, sans-serif;
-                    font-size: 24px;
-                    font-weight: bold;
-                    margin: 0 auto;
-                    padding: 0;
-                    text-align: center;
-                    margin-top: 5px;
-                    margin-bottom 15px;
-                }
         </style>
     </head>
     <body>
-
-        <header class="topbar">
-            <h1 class="center-align"><strong>Login to Account</strong></h1>
-        </header>
-
         <div class="container">
             <div class="row">
                 <div class="card col s12 m6 offset-m3 l4 offset-l4">
                     <div class="card-content">
-                        <form action="@routes.HomeController.loginHandler()" method="GET">
+                        <div class="row">
+                            <center><label for="Username">Username:</label></center>
+                            <center><h8>@user.getUsername</h8></center>
+
+                        </div>
+                        <div class="row">
+                            <center><label for="Password">Password:</label></center>
+                            <center><h8>@user.getPassword</h8></center>
+
+                        </div>
+
+
+                        <form action="@routes.HomeController.EditformHandler()" method="GET">
                             <div class="input-field">
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
+                                <input id="firstname" name="firstname" type="text" class="validate">
+                                <label for="firstname">Firstname</label>
                             </div>
                             <div class="input-field">
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
+                                <input id="lastname" name="lastname" type="text" class="validate">
+                                <label for="lastname">Lastname</label>
                             </div>
-                            @if(authorizeMessage!= null) {
-                                <div class="alert alert-primary" role="alert">
-                                @authorizeMessage
-                                </div>
-                                <br>
-                            }
-                            <div class="center-align">
-                                <button id="api-search-button" class="btn" type="submit">Submit</button>
-                            </div>
-                            <br>
-                            <div class="center-align">
-                                <div class="row">
-                                    <div class="col s6 left-align">
-                                        <a href="@routes.HomeController.signup()">Register User</a>
-                                    </div>
-                                    <div class="col s6 right-align">
-@*                                        Temp routes, will be changed to resetpassword once page is properly setup*@
-                                        <a href="@routes.HomeController.passwordReset()">Reset Password</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <button type="submit">Change Info</button>
                         </form>
                     </div>
                 </div>

@@ -49,6 +49,11 @@ public class HomeController extends Controller {
         return ok(views.html.register.render(null));
     }
 
+//    public CompletionStage<Result> returnloginHandler() {
+//         return ok(views.html.login.render(""));
+//    }
+
+
     public CompletionStage<Result> loginHandler() {
 
         Form<User> loginForm = formFactory.form(User.class).bindFromRequest();
@@ -92,7 +97,41 @@ public class HomeController extends Controller {
                 }, ec.current());
 
     }
+    public Result returnloginHandler() {
 
+        return ok(views.html.login.render(null));
+
+    }
+
+    public Result passwordReset()
+    {
+        return ok(views.html.resetpassword.render(null));
+    }
+    public CompletionStage<Result> passwordResetHandler()
+    {
+        Form<User> passwordResetForm = formFactory.form(User.class).bindFromRequest();
+        if(passwordResetForm.hasErrors())
+        {
+            return(CompletionStage<Result>)badRequest(views.html.resetpassword.render("Form Error"));
+        }
+        return passwordResetForm.get().passwordChangeSecurityCheck()
+                .thenApplyAsync((WSResponse r) -> {
+                    System.out.println("Status Code: " + r.getStatus());
+
+                    if(r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean())
+                    {
+                        System.out.println(r.asJson());
+                        session("email", passwordResetForm.get().getEmail()); // store username in session
+                        return ok(views.html.login.render("New Password sent to " + passwordResetForm.get().getEmail()));
+                        //return ok(resetpassword.render(""));
+                    }
+                    else {
+                        System.out.println("response null");
+                        String authorizeMessage = "Account Not Found";
+                        return badRequest(views.html.resetpassword.render(authorizeMessage));
+                    }
+                }, ec.current());
+    }
 
     public CompletionStage<Result> TaSubmitHandler() {
 
@@ -115,6 +154,43 @@ public class HomeController extends Controller {
 
     }
 
+    public Result EditSubmitHandler() {
+
+
+            RESTfulCalls.getAPI("http://localhost:9005/forminfo");
+
+            JsonNode userNode = RESTfulCalls.getAPI("http://localhost:9005/forminfo");
+
+
+            user = new User();
+
+            user.deserialize(userNode);
+
+
+            return ok(views.html.editPage.render(user));
+
+        }
+
+    public CompletionStage<Result> EditformHandler() {
+
+        Form<User> registrationForm = formFactory.form(User.class).bindFromRequest();
+        if (registrationForm.hasErrors()) {
+            return (CompletionStage<Result>) badRequest(views.html.register.render(null));
+        }
+        return registrationForm.get().EditProfile(user)
+                .thenApplyAsync((WSResponse r) -> {
+                    if (r.getStatus() == 200 && r.asJson() != null) {
+
+                        System.out.println(r.asJson());
+                        return ok(login.render(""));
+                    } else {
+                        //System.out.println(registrationForm.get().preference);//getting preference
+                        System.out.println("response null");
+                        return badRequest(views.html.login.render("Data not updated"));
+                    }
+                }, ec.current());
+
+    }
 
     public Result taForm() {
 
@@ -133,6 +209,8 @@ public class HomeController extends Controller {
         return ok(views.html.taForm.render(user));
 
     }
+
+
 
 
 }

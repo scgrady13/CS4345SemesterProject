@@ -354,6 +354,66 @@ public class User {
                 });
     }
 
+
+    public CompletionStage<WSResponse> passwordChangeSecurityCheck()
+    {
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        WSRequest request = ws.url("http://localhost:9005/resetpassword");
+        ObjectNode res = Json.newObject();
+        res.put("username", this.username);
+        res.put("email", this.email);
+        res.put("secAnswer1", this.secAnswer1);
+        res.put("secAnswer2",this.secAnswer2);
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
+
+
+    public CompletionStage<WSResponse> EditProfile(User user)
+    {
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        WSRequest request = ws.url("http://localhost:9005/update");
+        ObjectNode res = Json.newObject();
+
+        res.put("username", user.username);
+        res.put("password", user.password);
+        res.put("status", user.status);
+        res.put("degreeplan", user.degreeplan);
+        res.put("startingseason", user.startingseason);
+        res.put("startingyear", user.startingyear);
+        res.put("gradseason", user.gradseason);
+        res.put("gradyear", user.gradyear);
+        res.put("previouscourses", user.previouscourses);
+        res.put("secQuestion1", user.secQuestion1);
+        res.put("secQuestion2", user.secQuestion2);
+        res.put("secAnswer1", user.secAnswer1);
+        res.put("secAnswer1", user.secAnswer2);
+        res.put("firstname", this.firstname);
+        res.put("lastname", this.lastname);
+        res.put("title", user.title);
+        res.put("research", user.research);
+        res.put("position", user.position);
+        res.put("affiliation", user.affiliation);
+        res.put("email", user.email);
+        res.put("phone", user.phone);
+        res.put("fax", user.fax);
+        res.put("address", user.address);
+        res.put("city", user.city);
+        res.put("country", user.country);
+        res.put("zipCode", user.zipCode);
+        res.put("comments", user.comments);
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
+
     //changes values to one form backend
     public void deserialize(JsonNode a) {
         this.username = a.get("username").toString();
@@ -369,9 +429,9 @@ public class User {
         this.gradseason = a.get("gradseason").toString();
         this.gradyear = a.get("gradyear").toString();
 //        this.previouscourses = a.get("previouscourses").toString();
-//        this.secQuestion1 = a.get("sec_queston1").toString();
+//        this.secQuestion1 = a.get("sec_question1").toString();
 //        this.secAnswer1 = a.get("sec_answer1").toString();
-//        this.secQuestion2 = a.get("sec_queston2").toString();
+//        this.secQuestion2 = a.get("sec_question2").toString();
 //        this.secAnswer2 = a.get("sec_answer2").toString();
 //        this.title = a.get("title").toString();
 //        this.research = a.get("research").toString();
